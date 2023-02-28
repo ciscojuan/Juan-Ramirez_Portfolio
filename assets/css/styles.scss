@@ -1,0 +1,178 @@
+$color-main: rgb(5, 12, 25, 1);
+$font-ubuntu: ubuntu;
+$font-outfit: Outfit;
+$font-color: rgb(213, 215, 219, 1);
+$text-align: center;
+$p-size: 1.25rem;
+$line-height:1.75rem;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font-outfit;
+    .container{ 
+        display: flex;
+        .aside__perfil{
+            width: 15%;
+/*             position: fixed; */
+            height: 100vh;
+            background-color: $color-main;
+            color: white;
+            padding: 30px 20px;
+            text-align:$text-align;
+            &--portrait{
+                max-width: 9rem;
+                border-radius: 6rem;
+                border:1rem solid #1c2735;
+            }
+            &--title{
+                font-size: 2rem;
+                font-family: $font-outfit;
+                font-weight: 600;
+                line-height: 2rem;
+                color: $font-color;
+            }
+            &--media{
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                list-style: none;;
+                margin-bottom: 5rem;
+                .nav-link{
+                    color:white;
+                    font-size: 1.5rem;
+                    border:0.8rem solid #1c2735;
+                    border-radius: 6rem;
+                    .anchor{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+            &--menu{
+                text-justify: auto  ;
+                list-style: none;
+                .nav-link{
+                    font-size: 1.5rem;
+                    font-family: $font-outfit;
+                    text-align: left;
+                    color:$font-color;
+                    margin-top: 2rem;
+                    .anchor{
+                        text-decoration: none;
+                        color: $font-color;
+                        .mr-5{
+                            margin-right:2rem;
+                        }
+                    }
+                }
+            } 
+        }
+
+        .sections{
+            flex-direction: column;
+            width: 85%;
+            background-color: rgb(228, 229, 232);;
+            .header{
+                height: 100vh;
+                background-color: $font-color;
+                display: grid;
+                font-family:$font-ubuntu;
+                color: $color-main;
+                &__title{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    &--h1{
+                        font-size: 4rem;
+                        overflow: hidden;
+                        border-right: .15em solid $color-main;
+                        white-space: nowrap;
+                        margin: 0 auto;
+                        letter-spacing: .15em;
+                        animation:
+                            typing-h1 2.5s steps(30, end),
+                            blink-caret .75s step-end infinite;
+    
+                        @keyframes typing-h1 {
+                            from { width: 0 }
+                            to { width: 50% }
+                        }
+                    }
+                    &--h2{
+                        font-size: 1.8rem;
+                        overflow: hidden;
+                        border-right: .15em solid $color-main;
+                        white-space: nowrap;
+                        margin: 10px auto;
+                        letter-spacing: .15em;
+                        animation: typing-h2 2.5s steps(30, end), blink-caret .75s step-end infinite;
+    
+                        @keyframes typing-h2 {
+                            from { width: 0 }
+                            to { width: 30% }
+                        /* animation-delay: 2.5s; */
+                        }    
+                    }
+                    
+                }
+            }
+            .who_am_i{
+                padding: 0 4rem;
+                &__title{
+
+                    font-size: 4rem;
+                    padding: .5rem 0;
+                    border-bottom: 2px solid $color-main;
+                }
+                &__p{
+                    text-align: center;
+                    font-size: $p-size;
+                    line-height: $line-height;
+                }
+                &__portrait{
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 0 4rem;
+                    &--image{
+
+                    }
+                    .article{
+                        padding-left: 6rem;
+                        &__title{
+                            font-size: 2rem;
+                            line-height: $line-height;
+                        }
+                        &__p{
+                            font-size: $p-size;
+                            line-height: $line-height;
+                        }
+                    }
+                }
+                &__skills{
+                    
+                    .skills__container{
+                        display: flex;
+                        justify-content: space-around;
+                        padding: 0 6rem;
+                        .skills__cards{
+                            display: flex;
+                            justify-content: space-around;
+                            flex-wrap: wrap;
+                            .skills__card{
+                                width: 5rem;
+                                height: 5rem;
+                                border: 3px solid black;
+                                text-align: center;
+                                .fab{
+                                    font-size: 4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

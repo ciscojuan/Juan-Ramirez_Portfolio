@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Outfit;
+}
+body .container {
+  display: flex;
+}
+body .container .aside__perfil {
+  width: 15%;
+  /*             position: fixed; */
+  height: 100vh;
+  background-color: rgb(5, 12, 25);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+body .container .aside__perfil--portrait {
+  max-width: 9rem;
+  border-radius: 6rem;
+  border: 1rem solid #1c2735;
+}
+body .container .aside__perfil--title {
+  font-size: 2rem;
+  font-family: Outfit;
+  font-weight: 600;
+  line-height: 2rem;
+  color: rgb(213, 215, 219);
+}
+body .container .aside__perfil--media {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin-bottom: 5rem;
+}
+body .container .aside__perfil--media .nav-link {
+  color: white;
+  font-size: 1.5rem;
+  border: 0.8rem solid #1c2735;
+  border-radius: 6rem;
+}
+body .container .aside__perfil--media .nav-link .anchor {
+  text-decoration: none;
+  color: white;
+}
+body .container .aside__perfil--menu {
+  text-justify: auto;
+  list-style: none;
+}
+body .container .aside__perfil--menu .nav-link {
+  font-size: 1.5rem;
+  font-family: Outfit;
+  text-align: left;
+  color: rgb(213, 215, 219);
+  margin-top: 2rem;
+}
+body .container .aside__perfil--menu .nav-link .anchor {
+  text-decoration: none;
+  color: rgb(213, 215, 219);
+}
+body .container .aside__perfil--menu .nav-link .anchor .mr-5 {
+  margin-right: 2rem;
+}
+body .container .sections {
+  flex-direction: column;
+  width: 85%;
+  background-color: rgb(228, 229, 232);
+}
+body .container .sections .header {
+  height: 100vh;
+  background-color: rgb(213, 215, 219);
+  display: grid;
+  font-family: ubuntu;
+  color: rgb(5, 12, 25);
+}
+body .container .sections .header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container .sections .header__title--h1 {
+  font-size: 4rem;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(5, 12, 25);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing-h1 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing-h1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+body .container .sections .header__title--h2 {
+  font-size: 1.8rem;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(5, 12, 25);
+  white-space: nowrap;
+  margin: 10px auto;
+  letter-spacing: 0.15em;
+  animation: typing-h2 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing-h2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+  /* animation-delay: 2.5s; */
+}
+body .container .sections .who_am_i {
+  padding: 0 4rem;
+}
+body .container .sections .who_am_i__title {
+  font-size: 4rem;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid rgb(5, 12, 25);
+}
+body .container .sections .who_am_i__p {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+body .container .sections .who_am_i__portrait {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 4rem;
+}
+body .container .sections .who_am_i__portrait .article {
+  padding-left: 6rem;
+}
+body .container .sections .who_am_i__portrait .article__title {
+  font-size: 2rem;
+  line-height: 1.75rem;
+}
+body .container .sections .who_am_i__portrait .article__p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+body .container .sections .who_am_i__skills .skills__container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 6rem;
+}
+body .container .sections .who_am_i__skills .skills__container .skills__cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body .container .sections .who_am_i__skills .skills__container .skills__cards .skills__card {
+  width: 5rem;
+  height: 5rem;
+  border: 3px solid black;
+  text-align: center;
+}
+body .container .sections .who_am_i__skills .skills__container .skills__cards .skills__card .fab {
+  font-size: 4rem;
+}/*# sourceMappingURL=styles.css.map */
