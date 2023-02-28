@@ -6,8 +6,8 @@ $font-color: rgb(213, 215, 219, 1);
 $text-align: center;
 $p-size: 1.25rem;
 $line-height:1.75rem;
-$font-size-title:5rem;
-$font-size-title-sm: 2rem;
+$font-size-title:2.5rem;
+$font-size-title-sm: 1.15rem;
 body{
     margin: 0;
     padding: 0;
@@ -16,11 +16,11 @@ body{
         display: flex;
         .aside__perfil{
             width: 15%;
-/*             position: fixed; */
+            position: fixed;
             height: 100vh;
             background-color: $color-main;
             color: white;
-            padding: 30px 20px;
+            padding: 2rem 1.5rem 2rem 1.5rem;
             text-align:$text-align;
             &--portrait{
                 max-width: 9rem;
@@ -39,7 +39,7 @@ body{
                 justify-content: center;
                 gap: 2rem;
                 list-style: none;;
-                margin-bottom: 5rem;
+                margin-bottom: 10rem;
                 .nav-link{
                     color:white;
                     font-size: 1.5rem;
@@ -76,6 +76,7 @@ body{
             width: 85%;
             background-color: $color-background;
             height: 100%;
+            margin-left: auto;
             .header{
                 height: 100vh;
                 background-color: $font-color;
@@ -128,7 +129,11 @@ body{
 
                     font-size: $font-size-title;
                     padding: .5rem 0;
-                    border-bottom: 2px solid $color-main;
+                }
+                &__title::after{
+                   content:'_';
+                   width: 50%;
+                   color:#1849b5; 
                 }
                 &__p{
                     text-align: center;
@@ -176,6 +181,9 @@ body{
                                 width: 6rem;
                                 height: 7rem;
                                 padding: 0.5rem;
+                                border-top: none;
+                                border-left: none;
+                                border:.5px solid;
                                 box-shadow: 1px 1px 15px $color-main;
                                 &--svg{
                                     width: 5rem;
@@ -192,6 +200,12 @@ body{
                 height: 100%;
                 &__title{
                     font-size: $font-size-title;
+                    color: $color-main;
+                }
+                &__title::after{
+                    content: '_';
+                    width: 50%;
+                    color:#1849b5;
                 }
                 &__container{
                     width: 100%;
@@ -199,8 +213,8 @@ body{
                     flex-wrap: wrap;
                     gap:1.5rem;
                     &--project{
-                        width: 25rem;
-                        height: 35rem;
+                        width: 18rem;
+                        height: 32rem;
                         border: 1px solid #000;
                         text-align: center;
                         padding: 2rem;
@@ -250,13 +264,18 @@ body{
                 height: 100%;
                 &__title{
                     font-size: $font-size-title;
+                    color: $color-main;
                 }
+                &__title::after{
+                    content:'_';
+                    width: 50%;
+                    color:#1849b5; 
+                 }
                 &__container{
                     width: 100%;
                     display: flex;
-                    justify-content: space-around;
-                    flex-wrap: wrap;
-                    gap:1.5rem;
+                    justify-content: center;
+                    gap:5rem;
                     .contact__email{
                         display: flex;
                         align-items: center;
@@ -274,6 +293,7 @@ body{
                         width: 40rem;
                         text-align: center;
                         border-radius: 5px;
+                        border-top: none;
                         box-shadow: 1px 1px 15px $color-main;
                         .input-container{
                             width: 100%;
@@ -282,7 +302,7 @@ body{
                             .input{
                                 height: 1.5rem;
                                 width: 95%;
-                                font-size: 1rem;
+                                font-size: 20px;
                                 padding: 10px;
                                 padding-left: 0rem;
                                 background-color: white;

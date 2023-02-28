@@ -8,11 +8,11 @@ body .container {
 }
 body .container .aside__perfil {
   width: 15%;
-  /*             position: fixed; */
+  position: fixed;
   height: 100vh;
   background-color: rgb(5, 12, 25);
   color: white;
-  padding: 30px 20px;
+  padding: 2rem 1.5rem 2rem 1.5rem;
   text-align: center;
 }
 body .container .aside__perfil--portrait {
@@ -32,7 +32,7 @@ body .container .aside__perfil--media {
   justify-content: center;
   gap: 2rem;
   list-style: none;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 body .container .aside__perfil--media .nav-link {
   color: white;
@@ -67,6 +67,7 @@ body .container .sections {
   width: 85%;
   background-color: #f8fbfb;
   height: 100%;
+  margin-left: auto;
 }
 body .container .sections .header {
   height: 100vh;
@@ -82,7 +83,7 @@ body .container .sections .header__title {
   align-items: center;
 }
 body .container .sections .header__title--h1 {
-  font-size: 5rem;
+  font-size: 2.5rem;
   overflow: hidden;
   border-right: 0.15em solid rgb(5, 12, 25);
   white-space: nowrap;
@@ -99,7 +100,7 @@ body .container .sections .header__title--h1 {
   }
 }
 body .container .sections .header__title--h2 {
-  font-size: 2rem;
+  font-size: 1.15rem;
   overflow: hidden;
   border-right: 0.15em solid rgb(5, 12, 25);
   white-space: nowrap;
@@ -121,9 +122,13 @@ body .container .sections .who_am_i {
   margin: 4rem 0;
 }
 body .container .sections .who_am_i__title {
-  font-size: 5rem;
+  font-size: 2.5rem;
   padding: 0.5rem 0;
-  border-bottom: 2px solid rgb(5, 12, 25);
+}
+body .container .sections .who_am_i__title::after {
+  content: "_";
+  width: 50%;
+  color: #1849b5;
 }
 body .container .sections .who_am_i__p {
   text-align: center;
@@ -139,7 +144,7 @@ body .container .sections .who_am_i__portrait .article {
   padding-left: 6rem;
 }
 body .container .sections .who_am_i__portrait .article__title {
-  font-size: 2rem;
+  font-size: 1.15rem;
   line-height: 1.75rem;
 }
 body .container .sections .who_am_i__portrait .article__p {
@@ -168,6 +173,9 @@ body .container .sections .who_am_i__skills .skills__container .skills__cards .s
   width: 6rem;
   height: 7rem;
   padding: 0.5rem;
+  border-top: none;
+  border-left: none;
+  border: 0.5px solid;
   box-shadow: 1px 1px 15px rgb(5, 12, 25);
 }
 body .container .sections .who_am_i__skills .skills__container .skills__cards .skills__card--svg {
@@ -180,7 +188,13 @@ body .container .sections .projects {
   height: 100%;
 }
 body .container .sections .projects__title {
-  font-size: 5rem;
+  font-size: 2.5rem;
+  color: rgb(5, 12, 25);
+}
+body .container .sections .projects__title::after {
+  content: "_";
+  width: 50%;
+  color: #1849b5;
 }
 body .container .sections .projects__container {
   width: 100%;
@@ -189,8 +203,8 @@ body .container .sections .projects__container {
   gap: 1.5rem;
 }
 body .container .sections .projects__container--project {
-  width: 25rem;
-  height: 35rem;
+  width: 18rem;
+  height: 32rem;
   border: 1px solid #000;
   text-align: center;
   padding: 2rem;
@@ -199,7 +213,7 @@ body .container .sections .projects__container--project .project__image {
   width: 100%;
 }
 body .container .sections .projects__container--project .project__title {
-  font-size: 2rem;
+  font-size: 1.15rem;
 }
 body .container .sections .projects__container--project .project__comment {
   text-align: justify;
@@ -236,14 +250,19 @@ body .container .sections .contact {
   height: 100%;
 }
 body .container .sections .contact__title {
-  font-size: 5rem;
+  font-size: 2.5rem;
+  color: rgb(5, 12, 25);
+}
+body .container .sections .contact__title::after {
+  content: "_";
+  width: 50%;
+  color: #1849b5;
 }
 body .container .sections .contact__container {
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 5rem;
 }
 body .container .sections .contact__container .contact__email {
   display: flex;
@@ -260,6 +279,7 @@ body .container .sections .contact__container .contact__form {
   width: 40rem;
   text-align: center;
   border-radius: 5px;
+  border-top: none;
   box-shadow: 1px 1px 15px rgb(5, 12, 25);
 }
 body .container .sections .contact__container .contact__form .input-container {
@@ -270,7 +290,7 @@ body .container .sections .contact__container .contact__form .input-container {
 body .container .sections .contact__container .contact__form .input-container .input {
   height: 1.5rem;
   width: 95%;
-  font-size: 1rem;
+  font-size: 20px;
   padding: 10px;
   padding-left: 0rem;
   background-color: white;
