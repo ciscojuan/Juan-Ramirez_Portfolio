@@ -65,7 +65,8 @@ body .container .aside__perfil--menu .nav-link .anchor .mr-5 {
 body .container .sections {
   flex-direction: column;
   width: 85%;
-  background-color: rgb(228, 229, 232);
+  background-color: #f8fbfb;
+  height: 100%;
 }
 body .container .sections .header {
   height: 100vh;
@@ -81,7 +82,7 @@ body .container .sections .header__title {
   align-items: center;
 }
 body .container .sections .header__title--h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   overflow: hidden;
   border-right: 0.15em solid rgb(5, 12, 25);
   white-space: nowrap;
@@ -98,7 +99,7 @@ body .container .sections .header__title--h1 {
   }
 }
 body .container .sections .header__title--h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   overflow: hidden;
   border-right: 0.15em solid rgb(5, 12, 25);
   white-space: nowrap;
@@ -117,9 +118,10 @@ body .container .sections .header__title--h2 {
 }
 body .container .sections .who_am_i {
   padding: 0 4rem;
+  margin: 4rem 0;
 }
 body .container .sections .who_am_i__title {
-  font-size: 4rem;
+  font-size: 5rem;
   padding: 0.5rem 0;
   border-bottom: 2px solid rgb(5, 12, 25);
 }
@@ -149,17 +151,163 @@ body .container .sections .who_am_i__skills .skills__container {
   justify-content: space-around;
   padding: 0 6rem;
 }
+body .container .sections .who_am_i__skills .skills__container--p {
+  width: 40rem;
+}
 body .container .sections .who_am_i__skills .skills__container .skills__cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 body .container .sections .who_am_i__skills .skills__container .skills__cards .skills__card {
-  width: 5rem;
-  height: 5rem;
-  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  width: 6rem;
+  height: 7rem;
+  padding: 0.5rem;
+  box-shadow: 1px 1px 15px rgb(5, 12, 25);
 }
-body .container .sections .who_am_i__skills .skills__container .skills__cards .skills__card .fab {
-  font-size: 4rem;
+body .container .sections .who_am_i__skills .skills__container .skills__cards .skills__card--svg {
+  width: 5rem;
+  margin: 0 auto;
+}
+body .container .sections .projects {
+  margin: 4rem 0;
+  padding: 0 4rem;
+  height: 100%;
+}
+body .container .sections .projects__title {
+  font-size: 5rem;
+}
+body .container .sections .projects__container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+body .container .sections .projects__container--project {
+  width: 25rem;
+  height: 35rem;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 2rem;
+}
+body .container .sections .projects__container--project .project__image {
+  width: 100%;
+}
+body .container .sections .projects__container--project .project__title {
+  font-size: 2rem;
+}
+body .container .sections .projects__container--project .project__comment {
+  text-align: justify;
+  font-size: 1.25rem;
+}
+body .container .sections .projects__container--project .project__skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+body .container .sections .projects__container--project .project__skills .project__svg {
+  width: 4rem;
+}
+body .container .sections .projects__container--project .project__btns .btn__demo {
+  padding: 0.8rem 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid #1849b5;
+  background-color: #f8fbfb;
+  color: #1849b5;
+}
+body .container .sections .projects__container--project .project__btns .btn__git {
+  padding: 0.8rem 0.5rem;
+  margin-left: 0.5rem;
+  border: 1px solid #000;
+  border: 1px solid #f8fbfb;
+  background-color: #1849b5;
+  color: #f8fbfb;
+}
+body .container .sections .contact {
+  margin: 4rem 0;
+  padding: 0 4rem;
+  height: 100%;
+}
+body .container .sections .contact__title {
+  font-size: 5rem;
+}
+body .container .sections .contact__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+body .container .sections .contact__container .contact__email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body .container .sections .contact__container .contact__email .email--image .email__svg {
+  width: 5rem;
+}
+body .container .sections .contact__container .contact__email .email--title {
+  font-size: 1.25rem;
+}
+body .container .sections .contact__container .contact__form {
+  width: 40rem;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 15px rgb(5, 12, 25);
+}
+body .container .sections .contact__container .contact__form .input-container {
+  width: 100%;
+  height: 5rem;
+  margin: 10px 0;
+}
+body .container .sections .contact__container .contact__form .input-container .input {
+  height: 1.5rem;
+  width: 95%;
+  font-size: 1rem;
+  padding: 10px;
+  padding-left: 0rem;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(5, 12, 25);
+  margin: 10px;
+}
+body .container .sections .contact__container .contact__form .input-container .input-name {
+  background-image: url(../images/perfil/user-regular.svg);
+  background-repeat: no-repeat;
+  background-position: 565px;
+}
+body .container .sections .contact__container .contact__form .input-container .input-email {
+  background-image: url(../images/perfil/mail-regular.svg);
+  background-repeat: no-repeat;
+  background-position: 565px;
+}
+body .container .sections .contact__container .contact__form .input-container .input-message {
+  background-image: url(../images/perfil/sticky-note-solid.svg);
+  background-repeat: no-repeat;
+  background-position: 565px;
+}
+body .container .sections .contact__container .contact__form .button {
+  width: 20rem;
+  padding: 15px;
+  background-color: #1849b5;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s all;
+  font-weight: bold;
+  font-size: 18px;
+}
+body .container .sections .contact__container .contact__form .button:hover {
+  background-color: white;
+  color: #1849b5;
+  border: 1px solid #1849b5;
+  transform: scale(1.01) rotate(1deg);
 }/*# sourceMappingURL=styles.css.map */

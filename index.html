@@ -55,12 +55,12 @@
             >
           </li>
           <li class="nav-link">
-            <a href="#" class="anchor"
+            <a href="#who_am_i" class="anchor"
               ><i class="fas fa-male mr-5"></i><span>Who am I?</span></a
             >
           </li>
           <li class="nav-link">
-            <a href="#" class="anchor"
+            <a href="#projects" class="anchor"
               ><i class="far fa-folder-open mr-5"></i> <span>Projects</span></a
             >
           </li>
@@ -78,7 +78,7 @@
             <h2 class="header__title--h2">Front End Web Developer</h2>
           </div>
         </section>
-        <section class="who_am_i">
+        <section id="who_am_i" class="who_am_i">
           <h2 class="who_am_i__title">Who am I?</h2>
           <p class="who_am_i__p">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores in
@@ -100,44 +100,114 @@
           <div class="who_am_i__skills">
             <h2 class="who_am_i__title">Skills</h2>
             <div class="skills__container">
-                <p class="article__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reiciendis at libero amet ullam provident.</p>
+                <p class="skills__container--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reiciendis at libero amet ullam provident.</p>
                 <div class="skills__cards">
                     <div class="skills__card">
-                        <i class="fab fa-angular"></i>
+                      <object data="assets/images/skills/angular.svg" type="image/svg+xml" class="skills__card--svg"></object>
                         <span>Angular</span>
                     </div>
                     <div class="skills__card">
-                        <i class="fab fa-react"></i>
+                        <object data="assets/images/skills/react.svg" type="image/svg+xml" class="skills__card--svg"></object>
                         <span>React</span>
                         </sapn>
     
                     </div>
                     <div class="skills__card">
-                        <i class="fab fa-js-square"></i>
+                        <object data="assets/images/skills/javascript.svg" type="image/svg+xml" class="skills__card--svg"></object>
                         <span>JavaScript</span>
                          </div>
                     <div class="skills__card">
-                        <i class="fab fa-sass"></i>
+                        <object data="assets/images/skills/sass.svg" type="image/svg+xml" class="skills__card--svg"></object>
                         <span>Sass</span>
     
                     </div>
                     <div class="skills__card">
-                        <i class="fab fa-python"></i>
+                        <object data="assets/images/skills/python.svg" type="image/svg+xml" class="skills__card--svg"></object>
                         <span>Python</span>
     
                     </div>
                     <div class="skills__card">
-                        <i class="fab fa-python"></i>
+                        <object data="assets/images/skills/git.svg" type="image/svg+xml" class="skills__card--svg"></object>
                         <span>GIT</span>
     
                     </div>
                 </div>
             </div>
-            
+      
         </div>
-
         </section>
-        
+        <section id="projects" class="projects">
+          <h2 class="projects__title">Projects</h2>
+          <div class="projects__container">
+            <div class="projects__container--project">
+              <img src="assets/images/projects/marvel'sCharacters.JPG" alt="Proyecto " class="project__image">
+              <h3 class="project__title">Marvel Comics Enemies </h3>
+              <div class="project__comment">Marvel's characters uses the Fecth() Method to get connetc with the official Marvel API and get Enemies from Marvel comics This project uses Sass and Javascript as technologies</div>
+              <div class="project__skills">
+                <object data="assets/images/skills/javascript.svg" type="image/svg+xml" class="project__svg"></object>
+                <object data="assets/images/skills/html.svg" type="image/svg+xml" class="project__svg"></object>
+                <object data="assets/images/skills/sass.svg" type="image/svg+xml" class="project__svg"></object>
+               </div>
+              <div class="project__btns"><button class="btn__demo">Show Live</button><button class="btn__git">Git Hub</button></div>
+            </div>
+            
+            <div class="projects__container--project">
+              <img src="assets/images/projects/marvel'sCharacters.JPG" alt="Proyecto " class="project__image">
+              <h3 class="project__title">Marvel Comics Enemies </h3>
+              <div class="project__comment">Marvel's characters uses the Fecth() Method to get connetc with the official Marvel API and get Enemies from Marvel comics This project uses Sass and Javascript as technologies</div>
+              <div class="project__skills">
+                <object data="assets/images/skills/javascript.svg" type="image/svg+xml" class="project__svg"></object>
+                <object data="assets/images/skills/html.svg" type="image/svg+xml" class="project__svg"></object>
+                <object data="assets/images/skills/sass.svg" type="image/svg+xml" class="project__svg"></object>
+               </div>
+              <div class="project__btns"><button class="btn__demo">Show Live</button><button class="btn__git">Git Hub</button></div>
+            </div>
+            <div class="projects__container--project">
+              <img src="assets/images/projects/marvel'sCharacters.JPG" alt="Proyecto " class="project__image">
+              <h3 class="project__title">Marvel Comics Enemies </h3>
+              <div class="project__comment">Marvel's characters uses the Fecth() Method to get connetc with the official Marvel API and get Enemies from Marvel comics This project uses Sass and Javascript as technologies</div>
+              <div class="project__skills">
+                <object data="assets/images/skills/javascript.svg" type="image/svg+xml" class="project__svg"></object>
+                <object data="assets/images/skills/html.svg" type="image/svg+xml" class="project__svg"></object>
+                <object data="assets/images/skills/sass.svg" type="image/svg+xml" class="project__svg"></object>
+               </div>
+              <div class="project__btns"><button class="btn__demo">Show Live</button><button class="btn__git">Git Hub</button></div>
+            </div>
+
+          </div>
+        </section>
+        <section class="contact">
+          <h2 class="contact__title">Contact</h2>
+          <div class="contact__container">
+            <div class="contact__email">
+              <div class="email--image"><object data="assets/images/skills/gmail.svg" type="image/svg+xml" class="email__svg"></object></div>
+              <p class="email--title">Juan.ramirez.1519@gmail.com</p>
+            </div>
+            <div class="contact__form">
+              <form action="post">
+                <div class="input-container">
+                  <input name="name" id="name" class="input input-name" type="text" placeholder="Nombre" required data-tipo="nombre">
+                  <span class="input-message-error">Este campo no es valido</span>
+                </div>
+
+                
+                <div class="input-container">
+                  <input name="email" id="email" class="input input-email" type="email" placeholder="Email" required data-tipo="email">
+                  <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                
+                <div class="input-container">
+                  <input name="message" id="message" class="input input-message" type="message" placeholder="Message" required data-tipo="message">
+                  <span class="input-message-error">Este campo no es valido</span>
+                </div>
+
+                <button class="button">Enviar</a>
+
+              </form>
+
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </body>
