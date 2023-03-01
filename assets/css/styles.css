@@ -68,6 +68,7 @@ body .container .sections {
   background-color: #f8fbfb;
   height: 100%;
   margin-left: auto;
+  padding-left: 10rem;
 }
 body .container .sections .header {
   height: 100vh;
@@ -187,15 +188,6 @@ body .container .sections .projects {
   padding: 0 4rem;
   height: 100%;
 }
-body .container .sections .projects__title {
-  font-size: 2.5rem;
-  color: rgb(5, 12, 25);
-}
-body .container .sections .projects__title::after {
-  content: "_";
-  width: 50%;
-  color: #1849b5;
-}
 body .container .sections .projects__container {
   width: 100%;
   display: flex;
@@ -276,11 +268,11 @@ body .container .sections .contact__container .contact__email .email--title {
   font-size: 1.25rem;
 }
 body .container .sections .contact__container .contact__form {
-  width: 40rem;
+  width: 30rem;
+  padding: 1rem 2rem;
   text-align: center;
   border-radius: 5px;
   border-top: none;
-  box-shadow: 1px 1px 15px rgb(5, 12, 25);
 }
 body .container .sections .contact__container .contact__form .input-container {
   width: 100%;
@@ -293,25 +285,11 @@ body .container .sections .contact__container .contact__form .input-container .i
   font-size: 20px;
   padding: 10px;
   padding-left: 0rem;
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid rgb(5, 12, 25);
+  background-color: #f8fbfb;
+  border: none;
+  border-bottom: 1px solid rgb(5, 12, 25);
+  outline: none;
   margin: 10px;
-}
-body .container .sections .contact__container .contact__form .input-container .input-name {
-  background-image: url(../images/perfil/user-regular.svg);
-  background-repeat: no-repeat;
-  background-position: 565px;
-}
-body .container .sections .contact__container .contact__form .input-container .input-email {
-  background-image: url(../images/perfil/mail-regular.svg);
-  background-repeat: no-repeat;
-  background-position: 565px;
-}
-body .container .sections .contact__container .contact__form .input-container .input-message {
-  background-image: url(../images/perfil/sticky-note-solid.svg);
-  background-repeat: no-repeat;
-  background-position: 565px;
 }
 body .container .sections .contact__container .contact__form .button {
   width: 20rem;
@@ -330,4 +308,19 @@ body .container .sections .contact__container .contact__form .button:hover {
   color: #1849b5;
   border: 1px solid #1849b5;
   transform: scale(1.01) rotate(1deg);
+}
+body .container .title {
+  font-size: 2.5rem;
+  color: rgb(5, 12, 25);
+}
+body .container .title::after {
+  content: "_";
+  color: #1849b5;
+  animation: backwards 0.5s steps(5, start) infinite;
+  -webkit-animation: blink-animation 0.8s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }/*# sourceMappingURL=styles.css.map */
