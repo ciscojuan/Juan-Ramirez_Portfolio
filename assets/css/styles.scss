@@ -54,8 +54,9 @@ body {
       &--menu {
         text-justify: auto;
         list-style: none;
+        padding-left: inherit;
         .nav-link {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
           font-family: $font-outfit;
           text-align: left;
           color: $font-color;
@@ -366,7 +367,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   body {
     .container {
       .sections {
@@ -383,6 +384,98 @@ body {
           }
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  body {
+    .container {
+      .aside__perfil {
+        width: 20%;
+        padding: 2rem;
+        .aside__perfil--menu {
+          .nav-link {
+            font-size: 1.1rem;
+          }
+        }
+      }
+      .sections {
+        width: 80%;
+        .container__sections {
+          .who_am_i__portrait {
+            flex-direction: column;
+          }
+          .who_am_i__skills {
+            .skills__container {
+              flex-direction: column;
+              .container__p {
+                width: 100%;
+                height: auto;
+                margin-bottom: 5rem;
+              }
+            }
+          }
+          .contact__container {
+            .contact__email {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    .container {
+      .aside__perfil {
+        display: none;
+      }
+      .sections {
+        width: 100%;
+        .container__sections {
+          padding: 2rem;
+          .who_am_i__portrait {
+            .article {
+              padding-left: 0;
+            }
+          }
+          .who_am_i__skills {
+            .skills__container {
+              flex-direction: column;
+              .container__p {
+                width: 100%;
+                height: auto;
+                margin-bottom: 5rem;
+              }
+            }
+          }
+          .contact__container {
+            .contact__email {
+              display: none;
+            }
+          }
+          .projects__container {
+            width: 80%;
+            padding-left: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    .container {
+        .sections {
+          width: 100%;
+          .container__sections {
+            padding: 2rem;
+            .projects__container{
+                padding-left:0 ;
+            }
+          }
+        }
     }
   }
 }

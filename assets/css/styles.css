@@ -47,9 +47,10 @@ body .container .aside__perfil--media .nav-link .anchor {
 body .container .aside__perfil--menu {
   text-justify: auto;
   list-style: none;
+  padding-left: inherit;
 }
 body .container .aside__perfil--menu .nav-link {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: Outfit;
   text-align: left;
   color: rgb(213, 215, 219);
@@ -339,7 +340,7 @@ body .container .title::after {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   body .container .sections .container__sections .who_am_i__skills .skills__container {
     flex-direction: column;
   }
@@ -347,5 +348,71 @@ body .container .title::after {
     width: auto;
     height: auto;
     margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body .container .aside__perfil {
+    width: 20%;
+    padding: 2rem;
+  }
+  body .container .aside__perfil .aside__perfil--menu .nav-link {
+    font-size: 1.1rem;
+  }
+  body .container .sections {
+    width: 80%;
+  }
+  body .container .sections .container__sections .who_am_i__portrait {
+    flex-direction: column;
+  }
+  body .container .sections .container__sections .who_am_i__skills .skills__container {
+    flex-direction: column;
+  }
+  body .container .sections .container__sections .who_am_i__skills .skills__container .container__p {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  body .container .sections .container__sections .contact__container .contact__email {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .container .aside__perfil {
+    display: none;
+  }
+  body .container .sections {
+    width: 100%;
+  }
+  body .container .sections .container__sections {
+    padding: 2rem;
+  }
+  body .container .sections .container__sections .who_am_i__portrait .article {
+    padding-left: 0;
+  }
+  body .container .sections .container__sections .who_am_i__skills .skills__container {
+    flex-direction: column;
+  }
+  body .container .sections .container__sections .who_am_i__skills .skills__container .container__p {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+  }
+  body .container .sections .container__sections .contact__container .contact__email {
+    display: none;
+  }
+  body .container .sections .container__sections .projects__container {
+    width: 80%;
+    padding-left: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body .container .sections {
+    width: 100%;
+  }
+  body .container .sections .container__sections {
+    padding: 2rem;
+  }
+  body .container .sections .container__sections .projects__container {
+    padding-left: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
