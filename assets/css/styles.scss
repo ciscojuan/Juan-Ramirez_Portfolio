@@ -231,6 +231,7 @@ body {
               }
               .project__title {
                 font-size: $font-size-title-sm;
+                border-bottom: 1px solid #1849b5;
               }
               .project__comment {
                 text-align: justify;
@@ -253,15 +254,36 @@ body {
                   border: 1px solid #1849b5;
                   background-color: $color-background;
                   color: #1849b5;
+                  cursor: pointer;
+                    border-radius: 10px;
+                    transition: 0.5s all;
+                    font-weight: bold;
+                    font-size: 18px;
                 }
+                .btn__demo:hover {
+                    background-color: #1849b5;
+                    color: white;
+                    border: 1px solid #1849b5;
+                    transform: scale(1.01) rotate(1deg);
+                  }
                 .btn__git {
-                  padding: 0.8rem 0.5rem;
-                  margin-left: 0.5rem;
-                  border: 1px solid #000;
-                  border: 1px solid $color-background;
-                  background-color: #1849b5;
-                  color: $color-background;
-                }
+                    padding: 0.8rem 0.5rem;
+                    margin-left: 0.5rem;
+                    background-color: #1849b5;
+                    color: white;
+                    border: 1px solid white;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    transition: 0.5s all;
+                    font-weight: bold;
+                    font-size: 18px;
+                  }
+                  .btn__git:hover {
+                    background-color: white;
+                    color: #1849b5;
+                    border: 1px solid #1849b5;
+                    transform: scale(1.01) rotate(1deg);
+                  }
               }
             }
           }
@@ -309,6 +331,7 @@ body {
                 height: 5rem;
                 margin: 10px 0;
                 .input {
+                text-align:center;
                   height: 1.5rem;
                   width: 95%;
                   font-size: 20px;
@@ -470,12 +493,30 @@ body {
         .sections {
           width: 100%;
           .container__sections {
-            padding: 2rem;
-            .projects__container{
-                padding-left:0 ;
+            .projects{
+                margin:0;
+                padding: 0;
+                &__container{
+                    width: 100%;
+                    padding-left: 2rem;
+                    .projects__container--project{
+                        height: 35rem;
+                        .project__btns{                    
+                            .btn__demo{
+                                width: 100%;
+                                margin-bottom: 0.5rem;
+                            }
+                            .btn__git{
+                                width: 100%;
+                                margin-top: 0.5rem;
+                                margin-left:0;
+                            }
+                        }
+                    }
+                }
             }
-          }
+        }
+        }
         }
     }
-  }
 }

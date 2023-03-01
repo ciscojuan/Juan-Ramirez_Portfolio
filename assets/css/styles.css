@@ -221,6 +221,7 @@ body .container .sections .container__sections .projects__container--project .pr
 }
 body .container .sections .container__sections .projects__container--project .project__title {
   font-size: 1.15rem;
+  border-bottom: 1px solid #1849b5;
 }
 body .container .sections .container__sections .projects__container--project .project__comment {
   text-align: justify;
@@ -242,14 +243,35 @@ body .container .sections .container__sections .projects__container--project .pr
   border: 1px solid #1849b5;
   background-color: #f8fbfb;
   color: #1849b5;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s all;
+  font-weight: bold;
+  font-size: 18px;
+}
+body .container .sections .container__sections .projects__container--project .project__btns .btn__demo:hover {
+  background-color: #1849b5;
+  color: white;
+  border: 1px solid #1849b5;
+  transform: scale(1.01) rotate(1deg);
 }
 body .container .sections .container__sections .projects__container--project .project__btns .btn__git {
   padding: 0.8rem 0.5rem;
   margin-left: 0.5rem;
-  border: 1px solid #000;
-  border: 1px solid #f8fbfb;
   background-color: #1849b5;
-  color: #f8fbfb;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.5s all;
+  font-weight: bold;
+  font-size: 18px;
+}
+body .container .sections .container__sections .projects__container--project .project__btns .btn__git:hover {
+  background-color: white;
+  color: #1849b5;
+  border: 1px solid #1849b5;
+  transform: scale(1.01) rotate(1deg);
 }
 body .container .sections .container__sections .contact {
   margin: 4rem 0;
@@ -295,6 +317,7 @@ body .container .sections .container__sections .contact__container .contact__for
   margin: 10px 0;
 }
 body .container .sections .container__sections .contact__container .contact__form .input-container .input {
+  text-align: center;
   height: 1.5rem;
   width: 95%;
   font-size: 20px;
@@ -409,10 +432,24 @@ body .container .title::after {
   body .container .sections {
     width: 100%;
   }
-  body .container .sections .container__sections {
-    padding: 2rem;
+  body .container .sections .container__sections .projects {
+    margin: 0;
+    padding: 0;
   }
   body .container .sections .container__sections .projects__container {
-    padding-left: 0;
+    width: 100%;
+    padding-left: 2rem;
+  }
+  body .container .sections .container__sections .projects__container .projects__container--project {
+    height: 35rem;
+  }
+  body .container .sections .container__sections .projects__container .projects__container--project .project__btns .btn__demo {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  body .container .sections .container__sections .projects__container .projects__container--project .project__btns .btn__git {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-left: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
