@@ -5,348 +5,384 @@ $font-outfit: Outfit;
 $font-color: rgb(213, 215, 219, 1);
 $text-align: center;
 $p-size: 1.25rem;
-$line-height:1.75rem;
-$font-size-title:2.5rem;
+$line-height: 1.75rem;
+$font-size-title: 2.5rem;
 $font-size-title-sm: 1.15rem;
-body{
-    margin: 0;
-    padding: 0;
-    font-family: $font-outfit;
-    .container{ 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-outfit;
+  .container {
+    display: flex;
+    .aside__perfil {
+      width: 15%;
+      position: fixed;
+      height: 100vh;
+      background-color: $color-main;
+      color: white;
+      padding: 2rem 1.5rem 2rem 1.5rem;
+      text-align: $text-align;
+      &--portrait {
+        max-width: 9rem;
+        border-radius: 6rem;
+        border: 1rem solid #1c2735;
+      }
+      &--title {
+        font-size: 2rem;
+        font-family: $font-outfit;
+        font-weight: 600;
+        line-height: 2rem;
+        color: $font-color;
+      }
+      &--media {
         display: flex;
-        .aside__perfil{
-            width: 15%;
-            position: fixed;
-            height: 100vh;
-            background-color: $color-main;
+        justify-content: center;
+        gap: 2rem;
+        list-style: none;
+        margin-bottom: 10rem;
+        .nav-link {
+          color: white;
+          font-size: 1.5rem;
+          border: 0.8rem solid #1c2735;
+          border-radius: 6rem;
+          .anchor {
+            text-decoration: none;
             color: white;
-            padding: 2rem 1.5rem 2rem 1.5rem;
-            text-align:$text-align;
-            &--portrait{
-                max-width: 9rem;
-                border-radius: 6rem;
-                border:1rem solid #1c2735;
+          }
+        }
+      }
+      &--menu {
+        text-justify: auto;
+        list-style: none;
+        .nav-link {
+          font-size: 1.5rem;
+          font-family: $font-outfit;
+          text-align: left;
+          color: $font-color;
+          margin-top: 2rem;
+          .anchor {
+            text-decoration: none;
+            color: $font-color;
+            .mr-5 {
+              margin-right: 2rem;
             }
-            &--title{
-                font-size: 2rem;
-                font-family: $font-outfit;
-                font-weight: 600;
-                line-height: 2rem;
-                color: $font-color;
+          }
+        }
+      }
+    }
+
+    .sections {
+      flex-direction: column;
+      width: 85%;
+      background-color: $color-background;
+      height: 100%;
+      margin-left: auto;
+      /* padding-left: 18rem; */
+      .header {
+        height: 100vh;
+        background-color: #efe7e7;
+        display: grid;
+        font-family: $font-ubuntu;
+        color: $color-main;
+        &__title {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          &--h1 {
+            font-size: $font-size-title;
+            overflow: hidden;
+            border-right: 0.15em solid $color-main;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 0.15em;
+            animation: typing-h1 2.5s steps(30, end),
+              blink-caret 0.75s step-end infinite;
+
+            @keyframes typing-h1 {
+              from {
+                width: 0;
+              }
+              to {
+                width: 50%;
+              }
             }
-            &--media{
+          }
+          &--h2 {
+            font-size: $font-size-title-sm;
+            overflow: hidden;
+            border-right: 0.15em solid $color-main;
+            white-space: nowrap;
+            margin: 10px auto;
+            letter-spacing: 0.15em;
+            animation: typing-h2 2.5s steps(30, end),
+              blink-caret 0.75s step-end infinite;
+
+            @keyframes typing-h2 {
+              from {
+                width: 0;
+              }
+              to {
+                width: 30%;
+              }
+              /* animation-delay: 2.5s; */
+            }
+          }
+        }
+      }
+      .container__sections {
+        padding: 0 1rem 0 5rem;
+        .who_am_i {
+          padding: 0 1rem;
+          margin: 4rem 0;
+          &__title {
+            font-size: $font-size-title;
+            padding: 0.5rem 0;
+          }
+          &__title::after {
+            content: "_";
+            width: 50%;
+            color: #1849b5;
+          }
+          &__p {
+            text-align: justify;
+            font-size: $p-size;
+            line-height: $line-height;
+          }
+          &__portrait {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 1rem;
+            .portrair__container {
+              width: 400px;
+              &--image {
+                width: 100%;
+              }
+            }
+            .article {
+              padding-left: 4rem;
+              &__title {
+                font-size: $font-size-title-sm;
+                line-height: $line-height;
+              }
+              &__p {
+                font-size: $p-size;
+                line-height: $line-height;
+              }
+            }
+          }
+          &__skills {
+            .skills__container {
+              display: flex;
+              padding: 0 1rem 0 1rem;
+              .container__p {
+                width: 400px;
+                height: 400px;
+                margin-right: 5rem;
+                .skills__container--p {
+                  font-size: $p-size;
+                }
+              }
+              .skills__cards {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 2rem;
+                .skills__card {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  text-align: center;
+                  width: 6rem;
+                  height: 7rem;
+                  padding: 0.5rem;
+                  border-top: none;
+                  border-left: none;
+                  border: 0.5px solid;
+                  box-shadow: 1px 1px 15px $color-main;
+                  &--svg {
+                    width: 5rem;
+                    margin: 0 auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .projects {
+          margin: 4rem 0;
+          padding: 0 4rem;
+          height: 100%;
+          &__container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            &--project {
+              width: 18rem;
+              height: 32rem;
+              border: 1px solid #000;
+              text-align: center;
+              padding: 2rem;
+              .project__image {
+                width: 100%;
+              }
+              .project__title {
+                font-size: $font-size-title-sm;
+              }
+              .project__comment {
+                text-align: justify;
+                font-size: $p-size;
+              }
+              .project__skills {
                 display: flex;
                 justify-content: center;
-                gap: 2rem;
-                list-style: none;;
-                margin-bottom: 10rem;
-                .nav-link{
-                    color:white;
-                    font-size: 1.5rem;
-                    border:0.8rem solid #1c2735;
-                    border-radius: 6rem;
-                    .anchor{
-                        text-decoration: none;
-                        color: white;
-                    }
+                align-items: center;
+                gap: 1.5rem;
+                margin: 1rem 0;
+                .project__svg {
+                  width: 4rem;
                 }
+              }
+              .project__btns {
+                .btn__demo {
+                  padding: 0.8rem 0.5rem;
+                  margin-right: 0.5rem;
+                  border: 1px solid #1849b5;
+                  background-color: $color-background;
+                  color: #1849b5;
+                }
+                .btn__git {
+                  padding: 0.8rem 0.5rem;
+                  margin-left: 0.5rem;
+                  border: 1px solid #000;
+                  border: 1px solid $color-background;
+                  background-color: #1849b5;
+                  color: $color-background;
+                }
+              }
             }
-            &--menu{
-                text-justify: auto  ;
-                list-style: none;
-                .nav-link{
-                    font-size: 1.5rem;
-                    font-family: $font-outfit;
-                    text-align: left;
-                    color:$font-color;
-                    margin-top: 2rem;
-                    .anchor{
-                        text-decoration: none;
-                        color: $font-color;
-                        .mr-5{
-                            margin-right:2rem;
-                        }
-                    }
-                }
-            } 
+          }
         }
-
-        .sections{
-            flex-direction: column;
-            width: 85%;
-            background-color: $color-background;
-            height: 100%;
-            margin-left: auto;
-            padding-left: 10rem;
-            .header{
-                height: 100vh;
-                background-color: $font-color;
-                display: grid;
-                font-family:$font-ubuntu;
-                color: $color-main;
-                &__title{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    &--h1{
-                        font-size: $font-size-title;
-                        overflow: hidden;
-                        border-right: .15em solid $color-main;
-                        white-space: nowrap;
-                        margin: 0 auto;
-                        letter-spacing: .15em;
-                        animation:
-                            typing-h1 2.5s steps(30, end),
-                            blink-caret .75s step-end infinite;
-    
-                        @keyframes typing-h1 {
-                            from { width: 0 }
-                            to { width: 50% }
-                        }
-                    }
-                    &--h2{
-                        font-size: $font-size-title-sm;
-                        overflow: hidden;
-                        border-right: .15em solid $color-main;
-                        white-space: nowrap;
-                        margin: 10px auto;
-                        letter-spacing: .15em;
-                        animation: typing-h2 2.5s steps(30, end), blink-caret .75s step-end infinite;
-    
-                        @keyframes typing-h2 {
-                            from { width: 0 }
-                            to { width: 30% }
-                        /* animation-delay: 2.5s; */
-                        }    
-                    }
-                    
-                }
-            }
-            .who_am_i{
-                padding: 0 4rem;
-                margin: 4rem 0;
-                &__title{
-
-                    font-size: $font-size-title;
-                    padding: .5rem 0;
-                }
-                &__title::after{
-                   content:'_';
-                   width: 50%;
-                   color:#1849b5; 
-                }
-                &__p{
-                    text-align: center;
-                    font-size: $p-size;
-                    line-height: $line-height;
-                }
-                &__portrait{
-                    display: flex;
-                    justify-content: space-around;
-                    padding: 0 4rem;
-                    &--image{
-
-                    }
-                    .article{
-                        padding-left: 6rem;
-                        &__title{
-                            font-size: $font-size-title-sm;
-                            line-height: $line-height;
-                        }
-                        &__p{
-                            font-size: $p-size;
-                            line-height: $line-height;
-                        }
-                    }
-                }
-                &__skills{
-                    
-                    .skills__container{
-                        display: flex;
-                        justify-content: space-around;
-                        padding: 0 6rem;
-                        &--p{
-                            width: 40rem;
-                        }
-                        .skills__cards{
-                            display: flex;
-                            justify-content: space-around;
-                            flex-wrap: wrap;
-                            gap:2rem;
-                            .skills__card{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                text-align: center;
-                                width: 6rem;
-                                height: 7rem;
-                                padding: 0.5rem;
-                                border-top: none;
-                                border-left: none;
-                                border:.5px solid;
-                                box-shadow: 1px 1px 15px $color-main;
-                                &--svg{
-                                    width: 5rem;
-                                    margin: 0 auto;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .projects{
-                margin:4rem 0;
-                padding:0 4rem;
-                height: 100%;              
-                &__container{
-                    width: 100%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap:1.5rem;
-                    &--project{
-                        width: 18rem;
-                        height: 32rem;
-                        border: 1px solid #000;
-                        text-align: center;
-                        padding: 2rem;
-                        .project__image{
-                            width: 100%;
-                        }
-                        .project__title{
-                            font-size: $font-size-title-sm;
-                        }
-                        .project__comment{
-                            text-align: justify;
-                            font-size: $p-size;
-                        }
-                        .project__skills{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            gap:1.5rem;
-                            margin: 1rem 0;
-                            .project__svg{
-                                width: 4rem;
-                            }
-                        }
-                        .project__btns{
-                            .btn__demo{
-                                padding: .8rem .5rem;
-                                margin-right: .5rem;
-                                border: 1px solid #1849b5;
-                                background-color: $color-background;
-                                color:#1849b5;
-                            }
-                            .btn__git{
-                                padding: .8rem .5rem;
-                                margin-left: .5rem;
-                                border: 1px solid #000;
-                                border: 1px solid $color-background;
-                                background-color: #1849b5;
-                                color:$color-background;
-                            }
-                        }
-                    }
-                }
-            }
-            .contact{
-                margin:4rem 0;
-                padding:0 4rem;
-                height: 100%;
-                &__title{
-                    font-size: $font-size-title;
-                    color: $color-main;
-                }
-                &__title::after{
-                    content:'_';
-                    width: 50%;
-                    color:#1849b5; 
-                 }
-                &__container{
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    gap:5rem;
-                    .contact__email{
-                        display: flex;
-                        align-items: center;
-                        gap: 1rem;
-                        .email--image{
-                            .email__svg{
-                                width: 5rem;
-                            }
-                        }
-                        .email--title{
-                            font-size: $p-size;
-                        }
-                    }
-                    .contact__form{
-                        width: 30rem;
-                        padding: 1rem 2rem;
-                        text-align: center;
-                        border-radius: 5px;
-                        border-top: none;
-                        
-                        .input-container{
-                            width: 100%;
-                            height: 5rem;
-                            margin: 10px 0;
-                            .input{
-                                height: 1.5rem;
-                                width: 95%;
-                                font-size: 20px;
-                                padding: 10px;
-                                padding-left: 0rem;
-                                background-color: $color-background;
-                                border: none;                                
-                                border-bottom: 1px solid rgb(5, 12, 25);
-                                outline: none;
-                                margin: 10px;
-                            }
-                        }
-                        .button{
-                            width: 20rem;
-                            padding: 15px;
-                            background-color: #1849b5;
-                            color: white;
-                            border:1px solid white;
-                            cursor: pointer;
-                            border-radius: 10px;
-                            transition: .5s all;
-                            font-weight: bold;
-                            font-size: 18px;
-                        }
-                        .button:hover{
-                            background-color: white;
-                            color: #1849b5;
-                            border:1px solid #1849b5;
-                            transform: scale(1.01) rotate(1deg);
-                        }
-                    }
-                }
-            }
-        }
-        .title{
+        .contact {
+          margin: 4rem 0;
+          padding: 0 4rem;
+          height: 100%;
+          &__title {
             font-size: $font-size-title;
             color: $color-main;
-        }
-        .title::after{
-            content: '_';
-            color:#1849b5;
-            animation: backwards 0.5s steps(5, start) infinite;
-            -webkit-animation: blink-animation 0.8s steps(5, start) infinite;
-            
-        }
-        @keyframes blink-animation {
-          to {
-            visibility: hidden;
+          }
+          &__title::after {
+            content: "_";
+            width: 50%;
+            color: #1849b5;
+          }
+          &__container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+            .contact__email {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              .email--image {
+                .email__svg {
+                  width: 5rem;
+                }
+              }
+              .email--title {
+                font-size: $p-size;
+              }
+            }
+            .contact__form {
+              width: 30rem;
+              padding: 1rem 2rem;
+              text-align: center;
+              border-radius: 5px;
+              border-top: none;
+
+              .input-container {
+                width: 100%;
+                height: 5rem;
+                margin: 10px 0;
+                .input {
+                  height: 1.5rem;
+                  width: 95%;
+                  font-size: 20px;
+                  padding: 10px;
+                  padding-left: 0rem;
+                  background-color: $color-background;
+                  border: none;
+                  border-bottom: 1px solid rgb(5, 12, 25);
+                  outline: none;
+                  margin: 10px;
+                }
+              }
+              .button {
+                width: 20rem;
+                padding: 15px;
+                background-color: #1849b5;
+                color: white;
+                border: 1px solid white;
+                cursor: pointer;
+                border-radius: 10px;
+                transition: 0.5s all;
+                font-weight: bold;
+                font-size: 18px;
+              }
+              .button:hover {
+                background-color: white;
+                color: #1849b5;
+                border: 1px solid #1849b5;
+                transform: scale(1.01) rotate(1deg);
+              }
+            }
           }
         }
-        @-webkit-keyframes blink-animation {
-          to {
-            visibility: hidden;
-          }
-        }
+      }
     }
+    .title {
+      font-size: $font-size-title;
+      color: $color-main;
+    }
+    .title::after {
+      content: "_";
+      color: #1849b5;
+      animation: backwards 0.5s steps(5, start) infinite;
+      -webkit-animation: blink-animation 0.8s steps(5, start) infinite;
+    }
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    .container {
+      .sections {
+        .container__sections {
+          .who_am_i__skills {
+            .skills__container {
+              flex-direction: column;
+              .container__p {
+                width: auto;
+                height: auto;
+                margin-bottom: 5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
