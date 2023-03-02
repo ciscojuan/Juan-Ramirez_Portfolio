@@ -1,0 +1,155 @@
+$color-blue: #1849b5;
+$color-main: #f8fbfb;
+$color-background: #000;
+$font-color: #000;
+
+
+body {
+  color: #E5E5FE;
+  .container {
+    .aside__perfil {
+      background-color: $color-main;
+      color: $color-background;
+      &--portrait {
+        border: 1rem solid #ccc;
+      }
+      &--title {
+        color: $font-color;
+      }
+      &--media {
+        .nav-link {
+          color: $color-main;
+          .anchor {
+            color: $color-background;
+          }
+        }
+      }
+      &--menu {       
+        .nav-link {
+          color: $font-color;
+          .anchor {
+            color: $font-color;
+          }
+        }
+      }
+      .darkmode{    
+        
+        h1 {
+    
+          color:$color-background;
+          
+        }
+      }
+    }
+
+    .sections {
+      background-color: $color-background;
+
+      .header {
+        background-color: #efe7e7;
+        color: $color-main;
+        &__title {
+          &--h1 {
+            border-right: 0.15em solid $color-main;
+
+          }
+          &--h2 {     
+            border-right: 0.15em solid $color-main;
+            }
+          }
+        }
+      
+      .container__sections {
+        color: $color-main;
+        .who_am_i {
+          color: $color-main;
+          &__skills {
+            .skills__container {
+              .skills__cards {
+                .skills__card {
+                  box-shadow: 1px 1px 15px $color-main;
+                }
+              }
+            }
+          }
+        }
+        .projects {
+
+          &__container {          
+            &--project {
+              border: 1px solid $color-main;              
+              .project__title {
+                border-bottom: 1px solid $color-blue;
+              }
+
+              .project__btns {
+                .btn__demo {
+                  border: 1px solid $color-blue;
+                  background-color: $color-background;
+                  color: $color-blue;                
+                }
+                .btn__demo:hover {
+                    background-color: $color-main;
+                    color: $color-background;
+                    border: 1px solid $color-main;
+                  }
+                .btn__git {
+                    background-color: $color-blue;
+                    color: $color-background;
+                  }
+                  .btn__git:hover {
+                    background-color: $color-background;
+                    color: $color-blue;
+                    border: 1px solid $color-blue;
+                    transform: scale(1.01) rotate(1deg);
+                  }
+              }
+            }
+          }
+        }
+        .contact {
+
+          &__title {
+
+            color: $color-main;
+          }
+          &__title::after {
+
+            color: $color-blue;
+          }
+          &__container {
+
+            .contact__form {
+        
+              .input-container {
+               
+                .input {
+                  background-color: $color-background;
+                  border-bottom: 1px solid $color-main;
+                }
+              }
+              .button {
+
+                background-color: $color-blue;
+                color: $color-background;
+                border: 1px solid $color-background;
+              }
+              .button:hover {
+                background-color: $color-main;
+                color: $color-blue;
+                border: 1px solid $color-main;
+              }
+            }
+          }
+        }
+      }
+    }
+    .title {
+
+      color: $color-main;
+    }
+    .title::after {
+      color: $color-blue;
+    }
+  }
+}

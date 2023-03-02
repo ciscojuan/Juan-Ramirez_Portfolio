@@ -1,5 +1,8 @@
+$color-main: rgb(5, 12, 25, 1);
+$color-background: #f8fbfb;
 $font-ubuntu: ubuntu;
 $font-outfit: Outfit;
+$font-color: rgb(213, 215, 219, 1);
 $text-align: center;
 $p-size: 1.25rem;
 $line-height: 1.75rem;
@@ -29,13 +32,11 @@ body {
       }
       &--media {
         display: flex;
-        justify-content: center;
         gap: 2rem;
         list-style: none;
         margin-bottom: 10rem;
         .nav-link {
-          font-size: 1.5rem;
-          border-radius: 6rem;
+          font-size: 3.5rem;
           .anchor {
             text-decoration: none;
           }
@@ -52,6 +53,7 @@ body {
           margin-top: 2rem;
           .anchor {
             text-decoration: none;
+
             .mr-5 {
               margin-right: 2rem;
             }
@@ -66,7 +68,6 @@ body {
           top: 80%;
           transform: translate(-50%, -50%);
         }
-
         input[type="checkbox"] {
           margin: 10px;
           position: relative;
@@ -79,13 +80,11 @@ body {
           box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e,
             inset 0 0 10px rgba(0, 0, 0, 1);
         }
-
         input:checked[type="checkbox"] {
           background: linear-gradient(0deg, #e67e22, #f39c12);
           box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e,
             inset 0 0 10px rgba(0, 0, 0, 1);
         }
-
         input[type="checkbox"]:before {
           content: "";
           position: absolute;
@@ -99,11 +98,9 @@ body {
           transform: scale(0.98, 0.96);
           transition: 0.5s;
         }
-
         input:checked[type="checkbox"]:before {
           left: 40px;
         }
-
         input[type="checkbox"]:after {
           content: "";
           position: absolute;
@@ -115,16 +112,15 @@ body {
           border-radius: 50%;
           transition: 0.5s;
         }
-
         input:checked[type="checkbox"]:after {
           left: 110px;
         }
-
         h1 {
           margin: 0;
           padding: 0;
           font-family: sans-serif;
           text-align: center;
+          color: #fff;
           font-size: 16px;
           padding: 15px 0;
           text-transform: uppercase;
@@ -278,7 +274,6 @@ body {
             &--project {
               width: 18rem;
               height: 32rem;
-              border: 1px solid #000;
               text-align: center;
               padding: 2rem;
               .project__image {
@@ -312,7 +307,6 @@ body {
                   font-size: 18px;
                 }
                 .btn__demo:hover {
-
                   transform: scale(1.01) rotate(1deg);
                 }
                 .btn__git {
@@ -337,7 +331,6 @@ body {
           height: 100%;
           &__title {
             font-size: $font-size-title;
-  
           }
           &__title::after {
             content: "_";
@@ -404,10 +397,10 @@ body {
     }
     .title {
       font-size: $font-size-title;
-      color: $color-background-azul;
     }
     .title::after {
       content: "_";
+
       animation: backwards 0.5s steps(5, start) infinite;
       -webkit-animation: blink-animation 0.8s steps(5, start) infinite;
     }

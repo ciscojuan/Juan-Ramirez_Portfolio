@@ -1,0 +1,102 @@
+body {
+  color: #E5E5FE;
+}
+body .container .aside__perfil {
+  background-color: #f8fbfb;
+  color: #000;
+}
+body .container .aside__perfil--portrait {
+  border: 1rem solid #ccc;
+}
+body .container .aside__perfil--title {
+  color: #000;
+}
+body .container .aside__perfil--media .nav-link {
+  color: #f8fbfb;
+}
+body .container .aside__perfil--media .nav-link .anchor {
+  color: #000;
+}
+body .container .aside__perfil--menu .nav-link {
+  color: #000;
+}
+body .container .aside__perfil--menu .nav-link .anchor {
+  color: #000;
+}
+body .container .aside__perfil .darkmode h1 {
+  color: #000;
+}
+body .container .sections {
+  background-color: #000;
+}
+body .container .sections .header {
+  background-color: #efe7e7;
+  color: #f8fbfb;
+}
+body .container .sections .header__title--h1 {
+  border-right: 0.15em solid #f8fbfb;
+}
+body .container .sections .header__title--h2 {
+  border-right: 0.15em solid #f8fbfb;
+}
+body .container .sections .container__sections {
+  color: #f8fbfb;
+}
+body .container .sections .container__sections .who_am_i {
+  color: #f8fbfb;
+}
+body .container .sections .container__sections .who_am_i__skills .skills__container .skills__cards .skills__card {
+  box-shadow: 1px 1px 15px #f8fbfb;
+}
+body .container .sections .container__sections .projects__container--project {
+  border: 1px solid #f8fbfb;
+}
+body .container .sections .container__sections .projects__container--project .project__title {
+  border-bottom: 1px solid #1849b5;
+}
+body .container .sections .container__sections .projects__container--project .project__btns .btn__demo {
+  border: 1px solid #1849b5;
+  background-color: #000;
+  color: #1849b5;
+}
+body .container .sections .container__sections .projects__container--project .project__btns .btn__demo:hover {
+  background-color: #f8fbfb;
+  color: #000;
+  border: 1px solid #f8fbfb;
+}
+body .container .sections .container__sections .projects__container--project .project__btns .btn__git {
+  background-color: #1849b5;
+  color: #000;
+}
+body .container .sections .container__sections .projects__container--project .project__btns .btn__git:hover {
+  background-color: #000;
+  color: #1849b5;
+  border: 1px solid #1849b5;
+  transform: scale(1.01) rotate(1deg);
+}
+body .container .sections .container__sections .contact__title {
+  color: #f8fbfb;
+}
+body .container .sections .container__sections .contact__title::after {
+  color: #1849b5;
+}
+body .container .sections .container__sections .contact__container .contact__form .input-container .input {
+  background-color: #000;
+  border-bottom: 1px solid #f8fbfb;
+}
+body .container .sections .container__sections .contact__container .contact__form .button {
+  background-color: #1849b5;
+  color: #000;
+  border: 1px solid #000;
+}
+body .container .sections .container__sections .contact__container .contact__form .button:hover {
+  background-color: #f8fbfb;
+  color: #1849b5;
+  border: 1px solid #f8fbfb;
+}
+body .container .title {
+  color: #f8fbfb;
+}
+body .container .title::after {
+  color: #1849b5;
+}/*# sourceMappingURL=darkmode.css.map */

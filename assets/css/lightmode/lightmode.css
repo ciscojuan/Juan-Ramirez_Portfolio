@@ -1,0 +1,97 @@
+body .container .aside__perfil {
+  background-color: rgb(5, 12, 25);
+  color: #f8fbfb;
+}
+body .container .aside__perfil--portrait {
+  border: 1rem solid #f8fbfb;
+}
+body .container .aside__perfil--title {
+  color: rgb(213, 215, 219);
+}
+body .container .aside__perfil--media .nav-link {
+  color: #f8fbfb;
+  border: 0.8rem solid #f8fbfb;
+}
+body .container .aside__perfil--media .nav-link .anchor {
+  color: #f8fbfb;
+}
+body .container .aside__perfil--menu .nav-link {
+  color: rgb(213, 215, 219);
+}
+body .container .aside__perfil--menu .nav-link .anchor {
+  color: rgb(213, 215, 219);
+}
+body .container .aside__perfil .darkmode h1 {
+  color: #f8fbfb;
+}
+body .container .sections {
+  background-color: #f8fbfb;
+}
+body .container .sections .header {
+  background-color: #efe7e7;
+  color: rgb(5, 12, 25);
+}
+body .container .sections .header__title--h1 {
+  border-right: 0.15em solid rgb(5, 12, 25);
+}
+body .container .sections .header__title--h2 {
+  border-right: 0.15em solid rgb(5, 12, 25);
+}
+body .container .sections .container__sections .who_am_i__title::after {
+  color: rgb(11, 11, 198);
+}
+body .container .sections .container__sections .who_am_i__skills .skills__container .skills__cards .skills__card {
+  box-shadow: 1px 1px 15px rgb(5, 12, 25);
+}
+body .container .sections .container__sections .projects__container--project {
+  border: 1px solid rgb(5, 12, 25);
+}
+body .container .sections .container__sections .projects__container--project .project__title {
+  border-bottom: 1px solid rgb(11, 11, 198);
+}
+body .container .sections .container__sections .projects__container--project .project__btns .btn__demo {
+  border: 1px solid rgb(11, 11, 198);
+  background-color: #f8fbfb;
+  color: rgb(11, 11, 198);
+}
+body .container .sections .container__sections .projects__container--project .project__btns .btn__demo:hover {
+  background-color: rgb(11, 11, 198);
+  color: #f8fbfb;
+  border: 1px solid rgb(11, 11, 198);
+}
+body .container .sections .container__sections .projects__container--project .project__btns .btn__git {
+  background-color: rgb(11, 11, 198);
+  color: #f8fbfb;
+}
+body .container .sections .container__sections .projects__container--project .project__btns .btn__git:hover {
+  background-color: #f8fbfb;
+  color: rgb(11, 11, 198);
+  border: 1px solid rgb(11, 11, 198);
+  transform: scale(1.01) rotate(1deg);
+}
+body .container .sections .container__sections .contact__title {
+  color: rgb(5, 12, 25);
+}
+body .container .sections .container__sections .contact__title::after {
+  color: rgb(11, 11, 198);
+}
+body .container .sections .container__sections .contact__container .contact__form .input-container .input {
+  background-color: #f8fbfb;
+  border-bottom: 1px solid rgb(5, 12, 25);
+}
+body .container .sections .container__sections .contact__container .contact__form .button {
+  background-color: rgb(11, 11, 198);
+  color: #f8fbfb;
+  border: 1px solid #f8fbfb;
+}
+body .container .sections .container__sections .contact__container .contact__form .button:hover {
+  background-color: #f8fbfb;
+  color: rgb(11, 11, 198);
+  border: 1px solid rgb(11, 11, 198);
+}
+body .container .title {
+  color: rgb(5, 12, 25);
+}
+body .container .title::after {
+  color: rgb(11, 11, 198);
+}/*# sourceMappingURL=lightmode.css.map */
