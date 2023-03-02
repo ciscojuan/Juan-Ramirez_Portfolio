@@ -63,6 +63,68 @@ body .container .aside__perfil--menu .nav-link .anchor {
 body .container .aside__perfil--menu .nav-link .anchor .mr-5 {
   margin-right: 2rem;
 }
+body .container .aside__perfil .darkmode .center {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+body .container .aside__perfil .darkmode input[type=checkbox] {
+  margin: 10px;
+  position: relative;
+  width: 120px;
+  height: 40px;
+  -webkit-appearance: none;
+  background: linear-gradient(0deg, #333, #000);
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgb(0, 0, 0);
+}
+body .container .aside__perfil .darkmode input:checked[type=checkbox] {
+  background: linear-gradient(0deg, #e67e22, #f39c12);
+  box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgb(0, 0, 0);
+}
+body .container .aside__perfil .darkmode input[type=checkbox]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 40px;
+  background: linear-gradient(0deg, #000, #6b6b6b);
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px #232323;
+  transform: scale(0.98, 0.96);
+  transition: 0.5s;
+}
+body .container .aside__perfil .darkmode input:checked[type=checkbox]:before {
+  left: 40px;
+}
+body .container .aside__perfil .darkmode input[type=checkbox]:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 70px;
+  width: 4px;
+  height: 4px;
+  background: linear-gradient(0deg, #6b6b6b, #000);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+body .container .aside__perfil .darkmode input:checked[type=checkbox]:after {
+  left: 110px;
+}
+body .container .aside__perfil .darkmode h1 {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
 body .container .sections {
   flex-direction: column;
   width: 85%;
