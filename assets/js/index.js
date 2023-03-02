@@ -1,18 +1,23 @@
 "use strict";
 const darkSwitch = document.querySelector(".darkSwitch");
 const theme = document.querySelector("#darkMode");
-const light = "assets/css/lightMode/lightMode.css"
-const dark = "assets/css/lightMode/darkMode.css"
-darkSwitch.addEventListener("change", () => {
-    if(darkSwitch.checked){
-        theme.setAttribute("href", "assets/css/darkmode/darkmode.css");
-        localStorage.getItem('light') ? localStorage.removeItem('light'):localStorage.setItem('dark', dark)
-    }else{
-        theme.setAttribute("href", "assets/css/lightMode/lightMode.css")
-        localStorage.getItem('dark') ? localStorage.removeItem('dark'):localStorage.setItem('light', light)
-    }
-    
-       
+/* const light = "assets/css/lightMode/lightmode.css"
+const dark = "assets/css/darkMode/darkmode.css" */
 
-    
+// Load theme on page load
+window.addEventListener('load', () => {
+    const themeMode = localStorage.getItem('theme');
+    if (themeMode === 'dark') {
+        theme.href = 'assets/css/darkmode/darkmode.css';
+        darkSwitch.checked = true;
+    } else {
+        theme.href = 'assets/css/lightMode/lightmode.css';
+    }
+});
+
+// Toggle theme on darkSwitch change
+darkSwitch.addEventListener('change', () => {
+    const themeMode = darkSwitch.checked ? 'dark' : 'light';
+    theme.href = `assets/css/${themeMode}mode/${themeMode}mode.css`;
+    localStorage.setItem('theme', themeMode);
 });
