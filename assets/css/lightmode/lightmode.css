@@ -37,62 +37,66 @@ body .container .sections .header__title--h2 {
   border-right: 0.15em solid rgb(5, 12, 25);
 }
 body .container .sections .container__sections .who_am_i__title::after {
-  color: rgb(11, 11, 198);
+  color: #004ef9;
 }
 body .container .sections .container__sections .who_am_i__skills .skills__container .skills__cards .skills__card {
   box-shadow: 1px 1px 15px rgb(5, 12, 25);
 }
 body .container .sections .container__sections .projects__container--project {
-  border: 1px solid rgb(5, 12, 25);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 body .container .sections .container__sections .projects__container--project .project__title {
-  border-bottom: 1px solid rgb(11, 11, 198);
+  border-bottom: 1px solid #004ef9;
 }
 body .container .sections .container__sections .projects__container--project .project__btns .btn__demo {
-  border: 1px solid rgb(11, 11, 198);
+  border: 1px solid #004ef9;
   background-color: #f8fbfb;
-  color: rgb(11, 11, 198);
+  color: #004ef9;
 }
 body .container .sections .container__sections .projects__container--project .project__btns .btn__demo:hover {
-  background-color: rgb(11, 11, 198);
+  background-color: #004ef9;
   color: #f8fbfb;
-  border: 1px solid rgb(11, 11, 198);
+  border: 1px solid #004ef9;
 }
 body .container .sections .container__sections .projects__container--project .project__btns .btn__git {
-  background-color: rgb(11, 11, 198);
+  background-color: #004ef9;
   color: #f8fbfb;
+  border: 1px solid rgb(5, 12, 25);
 }
 body .container .sections .container__sections .projects__container--project .project__btns .btn__git:hover {
   background-color: #f8fbfb;
-  color: rgb(11, 11, 198);
-  border: 1px solid rgb(11, 11, 198);
+  color: #004ef9;
+  border: 1px solid rgb(5, 12, 25);
   transform: scale(1.01) rotate(1deg);
 }
 body .container .sections .container__sections .contact__title {
   color: rgb(5, 12, 25);
 }
 body .container .sections .container__sections .contact__title::after {
-  color: rgb(11, 11, 198);
+  color: #004ef9;
 }
 body .container .sections .container__sections .contact__container .contact__form .input-container .input {
   background-color: #f8fbfb;
-  border-bottom: 1px solid rgb(5, 12, 25);
-  border-left: 1px solid rgb(5, 12, 25);
-  border-right: 1px solid rgb(5, 12, 25);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 body .container .sections .container__sections .contact__container .contact__form .button {
-  background-color: rgb(11, 11, 198);
+  background-color: #004ef9;
   color: #f8fbfb;
   border: 1px solid #f8fbfb;
 }
 body .container .sections .container__sections .contact__container .contact__form .button:hover {
   background-color: #f8fbfb;
-  color: rgb(11, 11, 198);
-  border: 1px solid rgb(11, 11, 198);
+  color: #004ef9;
+  border: 1px solid #004ef9;
+}
+body .container .sections .container__sections .footer__container {
+  background-color: rgb(5, 12, 25);
+  color: #f8fbfb;
+  border-top: 2px solid rgb(5, 12, 25);
 }
 body .container .title {
   color: rgb(5, 12, 25);
 }
 body .container .title::after {
-  color: rgb(11, 11, 198);
+  color: #004ef9;
 }/*# sourceMappingURL=lightmode.css.map */

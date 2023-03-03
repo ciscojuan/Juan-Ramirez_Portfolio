@@ -30,7 +30,7 @@ body .container .sections {
   background-color: #000;
 }
 body .container .sections .header {
-  background-color: #efe7e7;
+  background-color: rgba(255, 136, 187, 0.5333333333);
   color: #f8fbfb;
 }
 body .container .sections .header__title--h1 {
@@ -49,56 +49,63 @@ body .container .sections .container__sections .who_am_i__skills .skills__contai
   box-shadow: 1px 1px 15px #f8fbfb;
 }
 body .container .sections .container__sections .projects__container--project {
-  border: 1px solid #f8fbfb;
+  box-shadow: 1px 1px 15px #f8fbfb;
 }
 body .container .sections .container__sections .projects__container--project .project__title {
-  border-bottom: 1px solid #1849b5;
+  border-bottom: 1px solid #004ef9;
 }
 body .container .sections .container__sections .projects__container--project .project__btns .btn__demo {
-  border: 1px solid #1849b5;
+  border: 1px solid #f8fbfb;
   background-color: #000;
-  color: #1849b5;
+  color: #f8fbfb;
+  transition: all 1s;
 }
 body .container .sections .container__sections .projects__container--project .project__btns .btn__demo:hover {
-  background-color: #f8fbfb;
+  background-color: #fff;
   color: #000;
   border: 1px solid #f8fbfb;
 }
 body .container .sections .container__sections .projects__container--project .project__btns .btn__git {
-  background-color: #1849b5;
-  color: #000;
+  background-color: #000;
+  color: #f8fbfb;
+  border: 1px solid #f8fbfb;
+  transition: all 1s;
 }
 body .container .sections .container__sections .projects__container--project .project__btns .btn__git:hover {
-  background-color: #000;
-  color: #1849b5;
-  border: 1px solid #1849b5;
+  background-color: #f8fbfb;
+  color: #000;
+  border: 1px solid #f8fbfb;
   transform: scale(1.01) rotate(1deg);
 }
 body .container .sections .container__sections .contact__title {
   color: #f8fbfb;
 }
 body .container .sections .container__sections .contact__title::after {
-  color: #1849b5;
+  color: #004ef9;
 }
 body .container .sections .container__sections .contact__container .contact__form .input-container .input {
   background-color: #000;
-  border-bottom: 1px solid #f8fbfb;
-  border-left: 1px solid #f8fbfb;
-  border-right: 1px solid #f8fbfb;
+  box-shadow: 0 3px 10px rgb(248, 251, 251);
 }
 body .container .sections .container__sections .contact__container .contact__form .button {
-  background-color: #1849b5;
-  color: #000;
-  border: 1px solid #000;
+  background-color: #000;
+  color: #f8fbfb;
+  border: 1px solid #f8fbfb;
+  transition: all 1s;
 }
 body .container .sections .container__sections .contact__container .contact__form .button:hover {
   background-color: #f8fbfb;
-  color: #1849b5;
+  color: #000;
   border: 1px solid #f8fbfb;
+}
+body .container .sections .container__sections .footer__container {
+  background-color: #f8fbfb;
+  color: #000;
+  border-top: 2px solid #f8fbfb;
 }
 body .container .title {
   color: #f8fbfb;
 }
 body .container .title::after {
-  color: #1849b5;
+  color: #004ef9;
 }/*# sourceMappingURL=darkmode.css.map */

@@ -28,6 +28,7 @@ body {
         font-family: $font-outfit;
         font-weight: 600;
         line-height: 2rem;
+        text-align: center;
       }
       &--media {
         display: flex;
@@ -35,7 +36,7 @@ body {
         list-style: none;
         margin-bottom: 10rem;
         .nav-link {
-          font-size: 3.5rem;
+          font-size: 3rem;
           .anchor {
             text-decoration: none;
           }
@@ -371,7 +372,7 @@ body {
                   font-size: 20px;
                   padding: 10px;
                   padding-left: 0rem;
-                  border: none; 
+                  border: none;
                   outline: none;
                   margin: 10px;
                 }
@@ -389,6 +390,15 @@ body {
                 transform: scale(1.01) rotate(1deg);
               }
             }
+          }
+        }
+        .footer{
+          &__container{
+            font-family: Pacifico, cursive;
+            font-size: 20px;
+            width: 95%;
+            text-align: center;
+            padding: 15px;
           }
         }
       }

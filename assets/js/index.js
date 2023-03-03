@@ -1,6 +1,19 @@
 "use strict";
 const darkSwitch = document.querySelector(".darkSwitch");
 const theme = document.querySelector("#darkMode");
+
+
+
+const about = document.querySelector('.about')
+
+about.addEventListener('click', (e) => {
+
+    window.scrollTo({
+      top: document.querySelector('#who_am_i').offsetTop,
+      behavior: 'smooth'
+    });
+  });
+
 /* const light = "assets/css/lightMode/lightmode.css"
 const dark = "assets/css/darkMode/darkmode.css" */
 

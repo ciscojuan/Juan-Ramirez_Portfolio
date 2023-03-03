@@ -1,4 +1,4 @@
-$color-blue: #1849b5;
+$color-blue: #004ef9;
 $color-main: #f8fbfb;
 $color-background: #000;
 $font-color: #000;
@@ -46,7 +46,7 @@ body {
       background-color: $color-background;
 
       .header {
-        background-color: #efe7e7;
+        background-color: #f8b8;
         color: $color-main;
         &__title {
           &--h1 {
@@ -77,30 +77,33 @@ body {
 
           &__container {          
             &--project {
-              border: 1px solid $color-main;              
+              box-shadow: 1px 1px 15px $color-main;              
               .project__title {
                 border-bottom: 1px solid $color-blue;
               }
 
               .project__btns {
                 .btn__demo {
-                  border: 1px solid $color-blue;
+                  border: 1px solid $color-main;
                   background-color: $color-background;
-                  color: $color-blue;                
+                  color: $color-main; 
+                  transition: all 1s;               
                 }
                 .btn__demo:hover {
-                    background-color: $color-main;
-                    color: $color-background;
+                    background-color: #fff;
+                    color: #000;
                     border: 1px solid $color-main;
                   }
                 .btn__git {
-                    background-color: $color-blue;
-                    color: $color-background;
+                    background-color: $color-background;
+                    color: $color-main;
+                    border: 1px solid $color-main;
+                    transition: all 1s;
                   }
                   .btn__git:hover {
-                    background-color: $color-background;
-                    color: $color-blue;
-                    border: 1px solid $color-blue;
+                    background-color: $color-main;
+                    color: $color-background;
+                    border: 1px solid $color-main;
                     transform: scale(1.01) rotate(1deg);
                   }
               }
@@ -125,25 +128,29 @@ body {
                
                 .input {
                   background-color: $color-background;
-                  border-bottom: 1px solid $color-main;
-                  border-left: 1px solid  $color-main;  
-                  border-right: 1px solid  $color-main;
+                  box-shadow: 0 3px 10px rgb(248 251 251  / 1.2); 
                 }
               }
               .button {
-
-                background-color: $color-blue;
-                color: $color-background;
-                border: 1px solid $color-background;
+                background-color: $color-background;
+                color: $color-main;
+                border: 1px solid $color-main;
+                transition: all 1s;
               }
               .button:hover {
                 background-color: $color-main;
-                color: $color-blue;
+                color: $color-background;
                 border: 1px solid $color-main;
               }
             }
           }
         }
+        .footer__container{
+          background-color: $color-main;
+          color: $color-background;
+          border-top: 2px solid $color-main;
+        }
+        
       }
     }
     .title {
