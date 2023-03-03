@@ -337,8 +337,9 @@ body .container .sections .container__sections .contact__container .contact__ema
 }
 body .container .sections .container__sections .contact__container .contact__form {
   width: 30rem;
-  padding: 1rem 2rem;
+  padding: 3rem;
   border-radius: 5px;
+  padding: 3rem;
 }
 body .container .sections .container__sections .contact__container .contact__form .contact__form--title {
   font-family: ubuntu;
