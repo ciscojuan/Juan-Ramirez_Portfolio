@@ -124,12 +124,12 @@ body {
           &__container {
 
             .contact__form {
-        
+              border: 1px solid #000;
               .input-container {
                
                 .input {
                   background-color: $color-background;
-                  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+                  border-bottom: 1px solid #000;
                 }
               }
               .button {

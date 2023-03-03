@@ -19,6 +19,7 @@ body {
       position: fixed;
       height: 100vh;
       padding: 2rem 1.5rem 2rem 1.5rem;
+      text-align: center;
       &--portrait {
         max-width: 9rem;
         border-radius: 6rem;
@@ -269,6 +270,7 @@ body {
           &__container {
             width: 100%;
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
             gap: 1.5rem;
             &--project {
@@ -357,16 +359,17 @@ body {
             .contact__form {
               width: 30rem;
               padding: 1rem 2rem;
-              text-align: center;
               border-radius: 5px;
-              border-top: none;
-
+              .contact__form--title{
+                font-family: $font-ubuntu;
+                font-size: $font-size-title;
+              }
               .input-container {
                 width: 100%;
                 height: 5rem;
                 margin: 10px 0;
                 .input {
-                  text-align: center;
+
                   height: 1.5rem;
                   width: 95%;
                   font-size: 20px;
@@ -376,6 +379,9 @@ body {
                   outline: none;
                   margin: 10px;
                 }
+              }
+              .input-message-error{
+                display: none;
               }
               .button {
                 width: 20rem;

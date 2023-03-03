@@ -75,9 +75,12 @@ body .container .sections .container__sections .contact__title {
 body .container .sections .container__sections .contact__title::after {
   color: #004ef9;
 }
+body .container .sections .container__sections .contact__container .contact__form {
+  border: 1px solid #000;
+}
 body .container .sections .container__sections .contact__container .contact__form .input-container .input {
   background-color: #f8fbfb;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #000;
 }
 body .container .sections .container__sections .contact__container .contact__form .button {
   background-color: #004ef9;

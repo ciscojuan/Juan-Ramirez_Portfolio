@@ -11,6 +11,7 @@ body .container .aside__perfil {
   position: fixed;
   height: 100vh;
   padding: 2rem 1.5rem 2rem 1.5rem;
+  text-align: center;
 }
 body .container .aside__perfil--portrait {
   max-width: 9rem;
@@ -251,6 +252,7 @@ body .container .sections .container__sections .projects {
 body .container .sections .container__sections .projects__container {
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
@@ -336,9 +338,11 @@ body .container .sections .container__sections .contact__container .contact__ema
 body .container .sections .container__sections .contact__container .contact__form {
   width: 30rem;
   padding: 1rem 2rem;
-  text-align: center;
   border-radius: 5px;
-  border-top: none;
+}
+body .container .sections .container__sections .contact__container .contact__form .contact__form--title {
+  font-family: ubuntu;
+  font-size: 2.5rem;
 }
 body .container .sections .container__sections .contact__container .contact__form .input-container {
   width: 100%;
@@ -346,7 +350,6 @@ body .container .sections .container__sections .contact__container .contact__for
   margin: 10px 0;
 }
 body .container .sections .container__sections .contact__container .contact__form .input-container .input {
-  text-align: center;
   height: 1.5rem;
   width: 95%;
   font-size: 20px;
@@ -355,6 +358,9 @@ body .container .sections .container__sections .contact__container .contact__for
   border: none;
   outline: none;
   margin: 10px;
+}
+body .container .sections .container__sections .contact__container .contact__form .input-message-error {
+  display: none;
 }
 body .container .sections .container__sections .contact__container .contact__form .button {
   width: 20rem;
