@@ -3,7 +3,7 @@ body {
 }
 body .container .aside__perfil {
   background-color: #f8fbfb;
-  color: #000;
+  color: #2f3336;
 }
 body .container .aside__perfil--portrait {
   border: 1rem solid #1c2735;
@@ -15,7 +15,7 @@ body .container .aside__perfil--media .nav-link {
   color: #f8fbfb;
 }
 body .container .aside__perfil--media .nav-link .anchor {
-  color: #000;
+  color: #2f3336;
 }
 body .container .aside__perfil--menu .nav-link {
   color: #000;
@@ -24,10 +24,10 @@ body .container .aside__perfil--menu .nav-link .anchor {
   color: #000;
 }
 body .container .aside__perfil .darkmode h1 {
-  color: #000;
+  color: #2f3336;
 }
 body .container .sections {
-  background-color: #000;
+  background-color: #2f3336;
 }
 body .container .sections .header {
   background-color: rgba(255, 136, 187, 0.5333333333);
@@ -56,7 +56,7 @@ body .container .sections .container__sections .projects__container--project .pr
 }
 body .container .sections .container__sections .projects__container--project .project__btns .btn__demo {
   border: 1px solid #f8fbfb;
-  background-color: #000;
+  background-color: #2f3336;
   color: #f8fbfb;
   transition: all 1s;
 }
@@ -66,14 +66,14 @@ body .container .sections .container__sections .projects__container--project .pr
   border: 1px solid #f8fbfb;
 }
 body .container .sections .container__sections .projects__container--project .project__btns .btn__git {
-  background-color: #000;
+  background-color: #2f3336;
   color: #f8fbfb;
   border: 1px solid #f8fbfb;
   transition: all 1s;
 }
 body .container .sections .container__sections .projects__container--project .project__btns .btn__git:hover {
   background-color: #f8fbfb;
-  color: #000;
+  color: #2f3336;
   border: 1px solid #f8fbfb;
   transform: scale(1.01) rotate(1deg);
 }
@@ -87,23 +87,23 @@ body .container .sections .container__sections .contact__container .contact__for
   border: 1px solid #fff;
 }
 body .container .sections .container__sections .contact__container .contact__form .input-container .input {
-  background-color: #000;
+  background-color: #2f3336;
   border-bottom: 1px solid #fff;
 }
 body .container .sections .container__sections .contact__container .contact__form .button {
-  background-color: #000;
+  background-color: #2f3336;
   color: #f8fbfb;
   border: 1px solid #f8fbfb;
   transition: all 1s;
 }
 body .container .sections .container__sections .contact__container .contact__form .button:hover {
   background-color: #f8fbfb;
-  color: #000;
+  color: #2f3336;
   border: 1px solid #f8fbfb;
 }
 body .container .sections .container__sections .footer__container {
   background-color: #f8fbfb;
-  color: #000;
+  color: #2f3336;
   border-top: 2px solid #f8fbfb;
 }
 body .container .title {
