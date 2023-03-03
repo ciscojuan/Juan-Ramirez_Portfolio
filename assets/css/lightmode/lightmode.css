@@ -3,14 +3,13 @@ body .container .aside__perfil {
   color: #f8fbfb;
 }
 body .container .aside__perfil--portrait {
-  border: 1rem solid #f8fbfb;
+  border: 1rem solid #1c2735;
 }
 body .container .aside__perfil--title {
   color: rgb(213, 215, 219);
 }
 body .container .aside__perfil--media .nav-link {
   color: #f8fbfb;
-  border: 0.8rem solid #f8fbfb;
 }
 body .container .aside__perfil--media .nav-link .anchor {
   color: #f8fbfb;
@@ -78,6 +77,8 @@ body .container .sections .container__sections .contact__title::after {
 body .container .sections .container__sections .contact__container .contact__form .input-container .input {
   background-color: #f8fbfb;
   border-bottom: 1px solid rgb(5, 12, 25);
+  border-left: 1px solid rgb(5, 12, 25);
+  border-right: 1px solid rgb(5, 12, 25);
 }
 body .container .sections .container__sections .contact__container .contact__form .button {
   background-color: rgb(11, 11, 198);

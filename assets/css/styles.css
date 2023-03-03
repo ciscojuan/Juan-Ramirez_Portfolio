@@ -11,12 +11,10 @@ body .container .aside__perfil {
   position: fixed;
   height: 100vh;
   padding: 2rem 1.5rem 2rem 1.5rem;
-  text-align: center;
 }
 body .container .aside__perfil--portrait {
   max-width: 9rem;
   border-radius: 6rem;
-  border: 1rem solid #1c2735;
 }
 body .container .aside__perfil--title {
   font-size: 2rem;
@@ -26,15 +24,12 @@ body .container .aside__perfil--title {
 }
 body .container .aside__perfil--media {
   display: flex;
-  justify-content: center;
   gap: 2rem;
   list-style: none;
   margin-bottom: 10rem;
 }
 body .container .aside__perfil--media .nav-link {
-  font-size: 1.5rem;
-  border: 0.8rem solid #1c2735;
-  border-radius: 6rem;
+  font-size: 3.5rem;
 }
 body .container .aside__perfil--media .nav-link .anchor {
   text-decoration: none;
@@ -112,6 +107,7 @@ body .container .aside__perfil .darkmode h1 {
   padding: 0;
   font-family: sans-serif;
   text-align: center;
+  color: #fff;
   font-size: 16px;
   padding: 15px 0;
   text-transform: uppercase;
@@ -260,7 +256,6 @@ body .container .sections .container__sections .projects__container {
 body .container .sections .container__sections .projects__container--project {
   width: 18rem;
   height: 32rem;
-  border: 1px solid #000;
   text-align: center;
   padding: 2rem;
 }
@@ -357,7 +352,6 @@ body .container .sections .container__sections .contact__container .contact__for
   padding: 10px;
   padding-left: 0rem;
   border: none;
-  border-bottom: 1px solid rgb(5, 12, 25);
   outline: none;
   margin: 10px;
 }
@@ -375,7 +369,6 @@ body .container .sections .container__sections .contact__container .contact__for
 }
 body .container .title {
   font-size: 2.5rem;
-  color: rgb(5, 12, 25);
 }
 body .container .title::after {
   content: "_";

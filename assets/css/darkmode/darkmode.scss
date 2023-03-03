@@ -11,7 +11,7 @@ body {
       background-color: $color-main;
       color: $color-background;
       &--portrait {
-        border: 1rem solid #ccc;
+        border: 1rem solid #1c2735;
       }
       &--title {
         color: $font-color;
@@ -126,6 +126,8 @@ body {
                 .input {
                   background-color: $color-background;
                   border-bottom: 1px solid $color-main;
+                  border-left: 1px solid  $color-main;  
+                  border-right: 1px solid  $color-main;
                 }
               }
               .button {

@@ -6,7 +6,15 @@ const dark = "assets/css/darkMode/darkmode.css" */
 
 // Load theme on page load
 window.addEventListener('load', () => {
-    const themeMode = localStorage.getItem('theme');
+    var themeMode = localStorage.getItem('theme');
+
+    var random = Math.random()
+    if (random <= 0.5){
+        themeMode = 'light'
+    }else if(random > 0.5){
+        themeMode = 'dark'
+    }
+    console.log(themeMode)
     if (themeMode === 'dark') {
         theme.href = 'assets/css/darkmode/darkmode.css';
         darkSwitch.checked = true;

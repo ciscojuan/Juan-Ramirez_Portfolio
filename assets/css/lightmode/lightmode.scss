@@ -11,7 +11,7 @@ body {
       background-color: $color-main;
       color: $color-background;
       &--portrait {
-        border: 1rem solid $color-background;
+        border: 1rem solid #1c2735;
       }
       &--title {
         color: $font-color;
@@ -19,7 +19,6 @@ body {
       &--media {
         .nav-link {
           color: $color-background;
-          border: 0.8rem solid $color-background;
           .anchor {
             color: $color-background;
           }
@@ -130,6 +129,8 @@ body {
                 .input {
                   background-color: $color-background;
                   border-bottom: 1px solid $color-main;
+                  border-left: 1px solid  $color-main;  
+                  border-right: 1px solid  $color-main; 
                 }
               }
               .button {
