@@ -107,7 +107,6 @@ body .button:hover {
   border: 1px solid #004ef9;
 }
 body .menu__button .project__svg {
-  border: 1rem solid #2f3336;
-  background: #9e617d;
+  border: 1rem solid rgba(255, 136, 187, 0.73);
   border-radius: 50%;
 }/*# sourceMappingURL=lightmode.css.map */

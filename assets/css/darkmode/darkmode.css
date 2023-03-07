@@ -120,4 +120,8 @@ body .button:hover {
   background-color: #f8fbfb;
   color: #2f3336;
   border: 1px solid #f8fbfb;
+}
+body .menu__button .project__svg {
+  border: 1rem solid rgba(255, 136, 187, 0.73);
+  border-radius: 50%;
 }/*# sourceMappingURL=darkmode.css.map */

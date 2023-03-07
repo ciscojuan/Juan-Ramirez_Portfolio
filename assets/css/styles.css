@@ -123,6 +123,22 @@ body .container .sections {
   height: 100%;
   margin-left: auto;
   /* padding-left: 18rem; */
+  /*       @keyframes display{
+          from{
+            opacity: 0;
+          }
+          to{
+            opacity: 1;
+          }
+        }
+        @keyframes display-off{
+          from{
+            opacity: 1;
+          }
+          to{
+            opacity: 0;
+          }
+        } */
 }
 body .container .sections .header {
   height: 100vh;
@@ -381,6 +397,7 @@ body .container .sections .menu__button {
   display: none;
 }
 body .container .sections .menu__button .lowerThan, body .container .sections .menu__button .greaterThan {
+  width: 100%;
   transition: all 1s;
 }
 body .container .sections .menu__button .lowerThan .project__svg, body .container .sections .menu__button .greaterThan .project__svg {

@@ -7,17 +7,29 @@ const closeMenu = document.querySelector('[data-lower]');
 console.log(openMenu)
 console.log(closeMenu)
 
-openMenu.addEventListener('click', () => {
-    console.log('running')
+
+ openMenu.addEventListener('click', () => {
     menu.style.display = 'block';
     closeMenu.style.display = 'block';
     openMenu.style.display = 'none';
-})
+
+    setTimeout(function() {
+        menu.style.opacity = "1";
+        menu.style.transform = "translateX(0)";
+      }, 10);
+      menu.style.transition = "all 2s ease";
+}) 
 
 closeMenu.addEventListener('click', () => {
     menu.style.display = 'none';
     openMenu.style.display = 'block';
     closeMenu.style.display = 'none';
+
+    setTimeout(function() {
+        menu.style.opacity = "0";
+        menu.style.transform = "translateX(-100%)";
+      }, 10);
+    menu.style.transition = "all 2s ease";
 
 })
 // Load theme on page load

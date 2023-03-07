@@ -171,4 +171,11 @@ body {
     color: $color-background;
     border: 1px solid $color-main;
   }
+  .menu__button{
+    .project__svg{
+      border: 1rem solid rgb(255 136 187 / 73%);
+
+      border-radius: 50%;
+    }
+  }
 }
