@@ -34,8 +34,9 @@ body {
       &--media {
         display: flex;
         gap: 2rem;
+
         list-style: none;
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
         .nav-link {
           font-size: 3rem;
           .anchor {
@@ -47,6 +48,7 @@ body {
       &--menu {
         text-justify: auto;
         list-style: none;
+        width: 100%;
         padding-left: inherit;
         .nav-link {
           font-size: 1.2rem;
@@ -154,16 +156,16 @@ body {
             margin: 0 auto;
             letter-spacing: 0.15em;
             animation: 
-            typing 3.5s steps(40, end),
+            typing 3.5s steps(100, end),
             blink-caret .45s step-end infinite;
 
             @keyframes blink-caret {
               from, to { border-color: transparent; }
-              50% { border-color: orange; }
+              50% {  }
             }
             @keyframes typing {
               from { width: 0; }
-              to { width: 100%; }
+              to { width: 60%; }
             }
             &--h1 {
               animation-delay: 1s;
@@ -270,7 +272,7 @@ body {
             gap: 1.5rem;
             &--project {
               width: 18rem;
-              height: 33rem;
+              height: auto;
               text-align: center;
               padding: 2rem;
               border-radius: 15px;
@@ -396,6 +398,21 @@ body {
           }
         }
       }
+      .menu__button{
+        width: 5rem;
+        font-size: 1rem;
+        position: fixed;
+        right: 5rem;
+        bottom: 5rem;
+        display: none;
+        .lowerThan, .greaterThan{
+          transition: all 1s;
+          .project__svg{
+            width: 4rem;
+          }
+      }
+      }
+
     }
     .title {
       font-size: $font-size-title;
@@ -430,6 +447,7 @@ body {
   .button:hover {
     transform: scale(1.01) rotate(1deg);
   }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -466,6 +484,11 @@ body {
       }
       .sections {
         width: 80%;
+        .header{
+          &__title--h1, &__title--h2{
+            font-size: 2.5rem;
+          }
+        }
         .container__sections {
           .who_am_i__portrait {
             flex-direction: column;
@@ -494,7 +517,20 @@ body {
   body {
     .container {
       .aside__perfil {
+        width: 30%;
         display: none;
+        &--portrait{
+          width: 6rem;
+        }
+        &--media{
+          margin-bottom: 2rem;
+          justify-content: center;
+          .nav-link{
+            .anchor{
+              font-size: 3rem;
+            }
+          }
+        }
       }
       .sections {
         width: 100%;
@@ -521,8 +557,16 @@ body {
             }
           }
           .projects__container {
-            width: 80%;
-            padding-left: 4rem;
+            width: 100%;
+          }
+        }
+        .menu__button{
+          display: block;
+          .greaterThan{
+            display: block;
+          }
+          .lowerThan{
+            display: none;
           }
         }
       }
@@ -532,17 +576,23 @@ body {
 @media screen and (max-width: 480px) {
   body {
     .container {
+
       .sections {
         width: 100%;
+        .header{
+          &__title--h1, &__title--h2{
+            font-size: 1.5rem;
+          }
+        }
         .container__sections {
           .projects {
             margin: 0;
             padding: 0;
             &__container {
               width: 100%;
-              padding-left: 2rem;
+
               .projects__container--project {
-                height: 35rem;
+                height: auto;
                 .project__btns {
                   .btn__demo {
                     width: 100%;
@@ -551,7 +601,7 @@ body {
                   .btn__git {
                     width: 100%;
                     margin-top: 0.5rem;
-                    margin-left: 0;
+                    
                   }
                 }
               }

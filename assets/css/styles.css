@@ -28,7 +28,7 @@ body .container .aside__perfil--media {
   display: flex;
   gap: 2rem;
   list-style: none;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 body .container .aside__perfil--media .nav-link {
   font-size: 3rem;
@@ -40,6 +40,7 @@ body .container .aside__perfil--media .nav-link .anchor {
 body .container .aside__perfil--menu {
   text-justify: auto;
   list-style: none;
+  width: 100%;
   padding-left: inherit;
 }
 body .container .aside__perfil--menu .nav-link {
@@ -140,14 +141,11 @@ body .container .sections .header__title--h1, body .container .sections .header_
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  animation: typing 3.5s steps(40, end), blink-caret 0.45s step-end infinite;
+  animation: typing 3.5s steps(100, end), blink-caret 0.45s step-end infinite;
 }
 @keyframes blink-caret {
   from, to {
     border-color: transparent;
-  }
-  50% {
-    border-color: orange;
   }
 }
 @keyframes typing {
@@ -155,7 +153,7 @@ body .container .sections .header__title--h1, body .container .sections .header_
     width: 0;
   }
   to {
-    width: 100%;
+    width: 60%;
   }
 }
 body .container .sections .header__title--h1--h1, body .container .sections .header__title--h2--h1 {
@@ -258,7 +256,7 @@ body .container .sections .container__sections .projects__container {
 }
 body .container .sections .container__sections .projects__container--project {
   width: 18rem;
-  height: 33rem;
+  height: auto;
   text-align: center;
   padding: 2rem;
   border-radius: 15px;
@@ -374,6 +372,20 @@ body .container .sections .container__sections .footer__container {
   text-align: center;
   padding: 15px;
 }
+body .container .sections .menu__button {
+  width: 5rem;
+  font-size: 1rem;
+  position: fixed;
+  right: 5rem;
+  bottom: 5rem;
+  display: none;
+}
+body .container .sections .menu__button .lowerThan, body .container .sections .menu__button .greaterThan {
+  transition: all 1s;
+}
+body .container .sections .menu__button .lowerThan .project__svg, body .container .sections .menu__button .greaterThan .project__svg {
+  width: 4rem;
+}
 body .container .title {
   font-size: 2.5rem;
 }
@@ -421,6 +433,9 @@ body .button:hover {
   body .container .sections {
     width: 80%;
   }
+  body .container .sections .header__title--h1, body .container .sections .header__title--h2 {
+    font-size: 2.5rem;
+  }
   body .container .sections .container__sections .who_am_i__portrait {
     flex-direction: column;
   }
@@ -438,7 +453,18 @@ body .button:hover {
 }
 @media screen and (max-width: 768px) {
   body .container .aside__perfil {
+    width: 30%;
     display: none;
+  }
+  body .container .aside__perfil--portrait {
+    width: 6rem;
+  }
+  body .container .aside__perfil--media {
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+  body .container .aside__perfil--media .nav-link .anchor {
+    font-size: 3rem;
   }
   body .container .sections {
     width: 100%;
@@ -461,13 +487,24 @@ body .button:hover {
     display: none;
   }
   body .container .sections .container__sections .projects__container {
-    width: 80%;
-    padding-left: 4rem;
+    width: 100%;
+  }
+  body .container .sections .menu__button {
+    display: block;
+  }
+  body .container .sections .menu__button .greaterThan {
+    display: block;
+  }
+  body .container .sections .menu__button .lowerThan {
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {
   body .container .sections {
     width: 100%;
+  }
+  body .container .sections .header__title--h1, body .container .sections .header__title--h2 {
+    font-size: 1.5rem;
   }
   body .container .sections .container__sections .projects {
     margin: 0;
@@ -475,10 +512,9 @@ body .button:hover {
   }
   body .container .sections .container__sections .projects__container {
     width: 100%;
-    padding-left: 2rem;
   }
   body .container .sections .container__sections .projects__container .projects__container--project {
-    height: 35rem;
+    height: auto;
   }
   body .container .sections .container__sections .projects__container .projects__container--project .project__btns .btn__demo {
     width: 100%;
@@ -487,7 +523,6 @@ body .button:hover {
   body .container .sections .container__sections .projects__container .projects__container--project .project__btns .btn__git {
     width: 100%;
     margin-top: 0.5rem;
-    margin-left: 0;
   }
 }
 html {

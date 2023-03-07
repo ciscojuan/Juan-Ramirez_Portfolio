@@ -105,4 +105,9 @@ body .button:hover {
   background-color: #f8fbfb;
   color: #004ef9;
   border: 1px solid #004ef9;
+}
+body .menu__button .project__svg {
+  border: 1rem solid #2f3336;
+  background: #9e617d;
+  border-radius: 50%;
 }/*# sourceMappingURL=lightmode.css.map */

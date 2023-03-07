@@ -1,13 +1,25 @@
 "use strict";
 const darkSwitch = document.querySelector(".darkSwitch");
 const theme = document.querySelector("#darkMode");
+const menu = document.querySelector('.aside__perfil');
+const openMenu = document.querySelector('[data-greather]');
+const closeMenu = document.querySelector('[data-lower]');
+console.log(openMenu)
+console.log(closeMenu)
 
-var Links = document.querySelectorAll("a");
+openMenu.addEventListener('click', () => {
+    console.log('running')
+    menu.style.display = 'block';
+    closeMenu.style.display = 'block';
+    openMenu.style.display = 'none';
+})
 
+closeMenu.addEventListener('click', () => {
+    menu.style.display = 'none';
+    openMenu.style.display = 'block';
+    closeMenu.style.display = 'none';
 
-/* const light = "assets/css/lightMode/lightmode.css"
-const dark = "assets/css/darkMode/darkmode.css" */
-
+})
 // Load theme on page load
 window.addEventListener('load', () => {
     var themeMode = localStorage.getItem('theme');

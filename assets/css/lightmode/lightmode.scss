@@ -168,4 +168,11 @@ body {
     color: $color-blue;
     border: 1px solid $color-blue;
   }
+  .menu__button{
+    .project__svg{
+      border: 1rem solid #2f3336;
+      background: #9e617d;
+      border-radius: 50%;
+    }
+  }
 }
