@@ -55,9 +55,9 @@ body {
           }
           &--h2 {     
             border-right: 0.15em solid $color-main;
-            }
           }
         }
+      }
       
       .container__sections {
         color: $color-main;
@@ -67,7 +67,10 @@ body {
             .skills__container {
               .skills__cards {
                 .skills__card {
-                  box-shadow: 1px 1px 15px $color-main;
+                  box-shadow: 1px 1px 15px #f8bb;
+                }
+                .skills__card:hover{
+                  border: 1px solid #fff;
                 }
               }
             }
@@ -77,11 +80,13 @@ body {
 
           &__container {          
             &--project {
-              box-shadow: 1px 1px 15px $color-main;              
+              box-shadow: 1px 1px 15px #f8bb;              
               .project__title {
-                border-bottom: 1px solid $color-blue;
-              }
 
+              }
+              .separator-line{
+                border:1px solid #f8f8
+              }
               .project__btns {
                 .btn__demo {
                   border: 1px solid $color-main;
@@ -107,6 +112,10 @@ body {
                     transform: scale(1.01) rotate(1deg);
                   }
               }
+
+            }
+            &--project:hover{
+              border: 1px solid #fff;   
             }
           }
         }
@@ -123,25 +132,15 @@ body {
           &__container {
 
             .contact__form {
-              border: 1px solid #fff;
+              box-shadow: 1px 1px 15px #f8bb;   
               .input-container {
-               
+               color: #fff;
                 .input {
                   background-color: $color-background;
-                  border-bottom: 1px solid #fff; 
+                  border-bottom: 1px solid #f8b8;
                 }
               }
-              .button {
-                background-color: $color-background;
-                color: $color-main;
-                border: 1px solid $color-main;
-                transition: all 1s;
-              }
-              .button:hover {
-                background-color: $color-main;
-                color: $color-background;
-                border: 1px solid $color-main;
-              }
+              
             }
           }
         }
@@ -160,5 +159,16 @@ body {
     .title::after {
       color: $color-blue;
     }
+  }
+  .button {
+    background-color: $color-background;
+    color: $color-main;
+    border: 1px solid #f8f8;
+    transition: all 1s;
+  }
+  .button:hover {
+    background-color: $color-main;
+    color: $color-background;
+    border: 1px solid $color-main;
   }
 }

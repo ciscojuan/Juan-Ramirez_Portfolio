@@ -40,6 +40,7 @@ body {
           font-size: 3rem;
           .anchor {
             text-decoration: none;
+            scroll-behavior: smooth;
           }
         }
       }
@@ -138,7 +139,7 @@ body {
       /* padding-left: 18rem; */
       .header {
         height: 100vh;
-        background-color: #efe7e7;
+        
         display: grid;
         font-family: $font-ubuntu;
         &__title {
@@ -146,42 +147,34 @@ body {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          &--h1 {
+          &--h1, &--h2 {
             font-size: $font-size-title;
             overflow: hidden;
             white-space: nowrap;
             margin: 0 auto;
             letter-spacing: 0.15em;
-            animation: typing-h1 2.5s steps(30, end),
-              blink-caret 0.75s step-end infinite;
+            animation: 
+            typing 3.5s steps(40, end),
+            blink-caret .45s step-end infinite;
 
-            @keyframes typing-h1 {
-              from {
-                width: 0;
-              }
-              to {
-                width: 50%;
-              }
+            @keyframes blink-caret {
+              from, to { border-color: transparent; }
+              50% { border-color: orange; }
             }
-          }
-          &--h2 {
-            font-size: $font-size-title-sm;
-            overflow: hidden;
-            white-space: nowrap;
-            margin: 10px auto;
-            letter-spacing: 0.15em;
-            animation: typing-h2 2.5s steps(30, end),
-              blink-caret 0.75s step-end infinite;
+            @keyframes typing {
+              from { width: 0; }
+              to { width: 100%; }
+            }
+            &--h1 {
+              animation-delay: 1s;
+            }
+            
+            &--h2 {
+              animation-delay: 4s;
+                    font-size: 1.5em;
+                    margin-top: 1em;
+            }
 
-            @keyframes typing-h2 {
-              from {
-                width: 0;
-              }
-              to {
-                width: 30%;
-              }
-              /* animation-delay: 2.5s; */
-            }
           }
         }
       }
@@ -253,12 +246,14 @@ body {
                   padding: 0.5rem;
                   border-top: none;
                   border-left: none;
-                  border: 0.5px solid;
+                  transition: all 1s;
+                  border-radius: 15px;
                   &--svg {
                     width: 5rem;
                     margin: 0 auto;
                   }
                 }
+
               }
             }
           }
@@ -275,14 +270,18 @@ body {
             gap: 1.5rem;
             &--project {
               width: 18rem;
-              height: 32rem;
+              height: 33rem;
               text-align: center;
               padding: 2rem;
+              border-radius: 15px;
               .project__image {
                 width: 100%;
               }
               .project__title {
                 font-size: $font-size-title-sm;
+              }
+              .separator-line{
+                margin: 15px 0;
               }
               .project__comment {
                 text-align: justify;
@@ -359,7 +358,7 @@ body {
             .contact__form {
               width: 30rem;
               padding: 3rem;
-              border-radius: 5px;
+              border-radius:25px;
               padding: 3rem;
               .contact__form--title{
                 font-family: $font-ubuntu;
@@ -370,7 +369,6 @@ body {
                 height: 5rem;
                 margin: 10px 0;
                 .input {
-
                   height: 1.5rem;
                   width: 95%;
                   font-size: 20px;
@@ -384,18 +382,7 @@ body {
               .input-message-error{
                 display: none;
               }
-              .button {
-                width: 20rem;
-                padding: 15px;
-                cursor: pointer;
-                border-radius: 10px;
-                transition: 0.5s all;
-                font-weight: bold;
-                font-size: 18px;
-              }
-              .button:hover {
-                transform: scale(1.01) rotate(1deg);
-              }
+              
             }
           }
         }
@@ -419,6 +406,7 @@ body {
       animation: backwards 0.5s steps(5, start) infinite;
       -webkit-animation: blink-animation 0.8s steps(5, start) infinite;
     }
+
     @keyframes blink-animation {
       to {
         visibility: hidden;
@@ -429,6 +417,18 @@ body {
         visibility: hidden;
       }
     }
+  }
+  .button {
+    width: 20rem;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s all;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .button:hover {
+    transform: scale(1.01) rotate(1deg);
   }
 }
 
@@ -562,3 +562,4 @@ body {
     }
   }
 }
+html { scroll-behavior: smooth;}

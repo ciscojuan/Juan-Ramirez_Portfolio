@@ -2,17 +2,8 @@
 const darkSwitch = document.querySelector(".darkSwitch");
 const theme = document.querySelector("#darkMode");
 
+var Links = document.querySelectorAll("a");
 
-
-const about = document.querySelector('.about')
-
-about.addEventListener('click', (e) => {
-
-    window.scrollTo({
-      top: document.querySelector('#who_am_i').offsetTop,
-      behavior: 'smooth'
-    });
-  });
 
 /* const light = "assets/css/lightMode/lightmode.css"
 const dark = "assets/css/darkMode/darkmode.css" */
@@ -21,12 +12,6 @@ const dark = "assets/css/darkMode/darkmode.css" */
 window.addEventListener('load', () => {
     var themeMode = localStorage.getItem('theme');
 
-    var random = Math.random()
-    if (random <= 0.5){
-        themeMode = 'light'
-    }else if(random > 0.5){
-        themeMode = 'dark'
-    }
     console.log(themeMode)
     if (themeMode === 'dark') {
         theme.href = 'assets/css/darkmode/darkmode.css';
