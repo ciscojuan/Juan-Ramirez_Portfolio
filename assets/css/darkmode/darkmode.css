@@ -6,6 +6,7 @@ body .container .aside__perfil {
   color: #2f3336;
 }
 body .container .aside__perfil--portrait {
+  background-color: #1c2735;
   border: 1rem solid #1c2735;
 }
 body .container .aside__perfil--title {

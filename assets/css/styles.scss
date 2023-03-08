@@ -203,10 +203,10 @@ body {
             justify-content: space-around;
             align-items: center;
             padding: 0 1rem;
-            .portrair__container {
+            .portrait__container {
               width: 400px;
-              &--image {
-                width: 100%;
+              .who_am_i__portrait--image {              
+                  max-width: 100%;
               }
             }
             .article {
@@ -413,23 +413,6 @@ body {
           }
       }
       }
-/*       @keyframes display{
-        from{
-          opacity: 0;
-        }
-        to{
-          opacity: 1;
-        }
-      }
-      @keyframes display-off{
-        from{
-          opacity: 1;
-        }
-        to{
-          opacity: 0;
-        }
-      } */
-
     }
     .title {
       font-size: $font-size-title;

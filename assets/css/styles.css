@@ -123,22 +123,6 @@ body .container .sections {
   height: 100%;
   margin-left: auto;
   /* padding-left: 18rem; */
-  /*       @keyframes display{
-          from{
-            opacity: 0;
-          }
-          to{
-            opacity: 1;
-          }
-        }
-        @keyframes display-off{
-          from{
-            opacity: 1;
-          }
-          to{
-            opacity: 0;
-          }
-        } */
 }
 body .container .sections .header {
   height: 100vh;
@@ -206,11 +190,11 @@ body .container .sections .container__sections .who_am_i__portrait {
   align-items: center;
   padding: 0 1rem;
 }
-body .container .sections .container__sections .who_am_i__portrait .portrair__container {
+body .container .sections .container__sections .who_am_i__portrait .portrait__container {
   width: 400px;
 }
-body .container .sections .container__sections .who_am_i__portrait .portrair__container--image {
-  width: 100%;
+body .container .sections .container__sections .who_am_i__portrait .portrait__container .who_am_i__portrait--image {
+  max-width: 100%;
 }
 body .container .sections .container__sections .who_am_i__portrait .article {
   padding-left: 4rem;
