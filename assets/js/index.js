@@ -9,21 +9,27 @@ const arrowOpen = document.querySelector("[data-greather]");
 const arrowClose = document.querySelector("[data-lower]");
 let isOpeneded = false;
 
+window.addEventListener('resize', ()=>{
+    container.style.filter = "blur(0)";
+    console.log('evento resize')
+})
 
 buttonMenu.addEventListener("click", (e) => {
-
+    console.log('metodo funcionando!');
   isOpeneded =!isOpeneded;
   if(isOpeneded == true && document.documentElement.clientWidth <= 768){
       menu.style.display = "block";
       arrowClose.style.display = "block";
       arrowOpen.style.display = "none";
       container.style.filter = "blur(2.5px)";
-  }else{
+  }
+  else{
     menu.style.display = "none";
     arrowClose.style.display = "none";
     arrowOpen.style.display = "block";
     container.style.filter = "blur(0)";
-  } e.stopImmediatePropagation()
+    e.stopImmediatePropagation()
+} 
 });
 
 // Load theme on page load

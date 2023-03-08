@@ -499,12 +499,15 @@ body .button:hover {
     width: 100%;
   }
   body .container .sections .button__container {
+    z-index: 999;
     display: block;
   }
   body .container .sections .button__container .greaterThan {
+    pointer-events: none;
     display: block;
   }
   body .container .sections .button__container .lowerThan {
+    pointer-events: none;
     display: none;
   }
 }

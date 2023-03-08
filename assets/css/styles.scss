@@ -571,11 +571,14 @@ body {
           }
         }
         .button__container{
+          z-index: 999;
           display: block;
           .greaterThan{
+            pointer-events: none;
             display: block;
           }
           .lowerThan{
+            pointer-events: none;
             display: none;
           }
         }
