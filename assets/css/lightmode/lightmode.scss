@@ -84,8 +84,6 @@ body {
           &__container {          
             &--project {
               box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);              
-              .project__title {
-              }
               .separator-line{
                 border: 1px solid rgb(0 0 0 / 0.2)
               }
@@ -140,10 +138,11 @@ body {
             }
           }
         }
-        .footer__container{
-          background-color: $color-main;
-          color: $color-background;
-          border-top: 2px solid $color-main;
+      }
+      .lowerThan, .greaterThan{
+        .project__svg{
+          border: .5rem solid rgb(255 136 187 / 73%);
+          border-radius: 50%;
         }
       }
     }
@@ -168,11 +167,5 @@ body {
     color: $color-blue;
     border: 1px solid $color-blue;
   }
-  .menu__button{
-    .project__svg{
-      border: 1rem solid rgb(255 136 187 / 73%);
 
-      border-radius: 50%;
-    }
-  }
 }

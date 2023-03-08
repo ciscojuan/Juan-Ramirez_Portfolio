@@ -398,21 +398,20 @@ body {
           }
         }
       }
-      .menu__button{
-        width: 5rem;
+      .lowerThan, .greaterThan{
+        width: 40px;
+        height: 40px;
         font-size: 1rem;
         position: fixed;
-        right: 5rem;
-        bottom: 5rem;
+        right: 2rem;
+        bottom: 2rem;
         display: none;
-        .lowerThan, .greaterThan{
-          width: 100%;
-          transition: all 1s;
-          .project__svg{
-            width: 4rem;
-          }
+        transition: all 1s;
+        .project__svg{
+          width: 2rem;
+        }
       }
-      }
+      
     }
     .title {
       font-size: $font-size-title;
@@ -561,14 +560,11 @@ body {
             width: 100%;
           }
         }
-        .menu__button{
+        .greaterThan{
           display: block;
-          .greaterThan{
-            display: block;
-          }
-          .lowerThan{
-            display: none;
-          }
+        }
+        .lowerThan{
+          display: none;
         }
       }
     }

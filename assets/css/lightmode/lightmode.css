@@ -85,10 +85,9 @@ body .container .sections .container__sections .contact__container .contact__for
   background-color: #f8fbfb;
   border-bottom: 1px solid #000;
 }
-body .container .sections .container__sections .footer__container {
-  background-color: #2f3336;
-  color: #f8fbfb;
-  border-top: 2px solid #2f3336;
+body .container .sections .lowerThan .project__svg, body .container .sections .greaterThan .project__svg {
+  border: 0.5rem solid rgba(255, 136, 187, 0.73);
+  border-radius: 50%;
 }
 body .container .title {
   color: #2f3336;
@@ -105,8 +104,4 @@ body .button:hover {
   background-color: #f8fbfb;
   color: #004ef9;
   border: 1px solid #004ef9;
-}
-body .menu__button .project__svg {
-  border: 1rem solid rgba(255, 136, 187, 0.73);
-  border-radius: 50%;
 }/*# sourceMappingURL=lightmode.css.map */

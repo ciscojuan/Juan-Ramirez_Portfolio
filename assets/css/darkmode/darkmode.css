@@ -105,24 +105,24 @@ body .container .sections .container__sections .footer__container {
   color: #2f3336;
   border-top: 2px solid #f8fbfb;
 }
+body .container .sections .lowerThan .project__svg, body .container .sections .greaterThan .project__svg {
+  border: 0.5rem solid rgba(255, 136, 187, 0.73);
+  border-radius: 50%;
+}
 body .container .title {
   color: #f8fbfb;
 }
 body .container .title::after {
   color: #004ef9;
 }
-body .button {
+body .container .button {
   background-color: #2f3336;
   color: #f8fbfb;
   border: 1px solid rgba(255, 136, 255, 0.5333333333);
   transition: all 1s;
 }
-body .button:hover {
+body .container .button:hover {
   background-color: #f8fbfb;
   color: #2f3336;
   border: 1px solid #f8fbfb;
-}
-body .menu__button .project__svg {
-  border: 1rem solid rgba(255, 136, 187, 0.73);
-  border-radius: 50%;
 }/*# sourceMappingURL=darkmode.css.map */

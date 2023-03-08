@@ -372,20 +372,18 @@ body .container .sections .container__sections .footer__container {
   text-align: center;
   padding: 15px;
 }
-body .container .sections .menu__button {
-  width: 5rem;
+body .container .sections .lowerThan, body .container .sections .greaterThan {
+  width: 40px;
+  height: 40px;
   font-size: 1rem;
   position: fixed;
-  right: 5rem;
-  bottom: 5rem;
+  right: 2rem;
+  bottom: 2rem;
   display: none;
-}
-body .container .sections .menu__button .lowerThan, body .container .sections .menu__button .greaterThan {
-  width: 100%;
   transition: all 1s;
 }
-body .container .sections .menu__button .lowerThan .project__svg, body .container .sections .menu__button .greaterThan .project__svg {
-  width: 4rem;
+body .container .sections .lowerThan .project__svg, body .container .sections .greaterThan .project__svg {
+  width: 2rem;
 }
 body .container .title {
   font-size: 2.5rem;
@@ -490,13 +488,10 @@ body .button:hover {
   body .container .sections .container__sections .projects__container {
     width: 100%;
   }
-  body .container .sections .menu__button {
+  body .container .sections .greaterThan {
     display: block;
   }
-  body .container .sections .menu__button .greaterThan {
-    display: block;
-  }
-  body .container .sections .menu__button .lowerThan {
+  body .container .sections .lowerThan {
     display: none;
   }
 }

@@ -52,14 +52,12 @@ body {
         &__title {
           &--h1 {
             border-right: 0.15em solid $color-main;
-
           }
           &--h2 {     
             border-right: 0.15em solid $color-main;
           }
         }
       }
-      
       .container__sections {
         color: $color-main;
         .who_am_i {
@@ -82,9 +80,6 @@ body {
           &__container {          
             &--project {
               box-shadow: 1px 1px 15px #f8bb;              
-              .project__title {
-
-              }
               .separator-line{
                 border:1px solid #f8f8
               }
@@ -113,7 +108,7 @@ body {
                     transform: scale(1.01) rotate(1deg);
                   }
               }
-
+            
             }
             &--project:hover{
               border: 1px solid #fff;   
@@ -135,7 +130,7 @@ body {
             .contact__form {
               box-shadow: 1px 1px 15px #f8bb;   
               .input-container {
-               color: #fff;
+                color: #fff;
                 .input {
                   background-color: $color-background;
                   border-bottom: 1px solid #f8b8;
@@ -152,31 +147,32 @@ body {
         }
         
       }
-    }
-    .title {
 
+      .lowerThan, .greaterThan{
+        .project__svg{
+          border: .5rem solid rgb(255 136 187 / 73%);
+          border-radius: 50%;
+        }
+      }
+    }
+      
+    .title {
       color: $color-main;
     }
     .title::after {
       color: $color-blue;
     }
-  }
-  .button {
-    background-color: $color-background;
-    color: $color-main;
-    border: 1px solid #f8f8;
-    transition: all 1s;
-  }
-  .button:hover {
-    background-color: $color-main;
-    color: $color-background;
-    border: 1px solid $color-main;
-  }
-  .menu__button{
-    .project__svg{
-      border: 1rem solid rgb(255 136 187 / 73%);
-
-      border-radius: 50%;
+  
+    .button {
+      background-color: $color-background;
+      color: $color-main;
+      border: 1px solid #f8f8;
+      transition: all 1s;
+    }
+    .button:hover {
+      background-color: $color-main;
+      color: $color-background;
+      border: 1px solid $color-main;
     }
   }
 }
