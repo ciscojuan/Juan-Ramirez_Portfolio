@@ -3,15 +3,14 @@ $color-main: #f8fbfb;
 $color-background: #2f3336;
 $font-color: #000;
 
-
 body {
-  color: #E5E5FE;
+  color: #e5e5fe;
   .container {
     .aside__perfil {
       background-color: $color-main;
       color: $color-background;
       &--portrait {
-        background-color:#1c2735 ;
+        background-color: #1c2735;
         border: 1rem solid #1c2735;
       }
       &--title {
@@ -25,7 +24,7 @@ body {
           }
         }
       }
-      &--menu {       
+      &--menu {
         .nav-link {
           color: $font-color;
           .anchor {
@@ -33,12 +32,9 @@ body {
           }
         }
       }
-      .darkmode{    
-        
+      .darkmode {
         h1 {
-    
-          color:$color-background;
-          
+          color: $color-background;
         }
       }
     }
@@ -53,7 +49,7 @@ body {
           &--h1 {
             border-right: 0.15em solid $color-main;
           }
-          &--h2 {     
+          &--h2 {
             border-right: 0.15em solid $color-main;
           }
         }
@@ -68,7 +64,7 @@ body {
                 .skills__card {
                   box-shadow: 1px 1px 15px #f8bb;
                 }
-                .skills__card:hover{
+                .skills__card:hover {
                   border: 1px solid #fff;
                 }
               }
@@ -76,59 +72,53 @@ body {
           }
         }
         .projects {
-
-          &__container {          
+          &__container {
             &--project {
-              box-shadow: 1px 1px 15px #f8bb;              
-              .separator-line{
-                border:1px solid #f8f8
+              box-shadow: 1px 1px 15px #f8bb;
+              .separator-line {
+                border: 1px solid #f8f8;
               }
               .project__btns {
                 .btn__demo {
                   border: 1px solid $color-main;
                   background-color: $color-background;
-                  color: $color-main; 
-                  transition: all 1s;               
+                  color: $color-main;
+                  transition: all 1s;
                 }
                 .btn__demo:hover {
-                    background-color: #fff;
-                    color: #000;
-                    border: 1px solid $color-main;
-                  }
+                  background-color: #fff;
+                  color: #000;
+                  border: 1px solid $color-main;
+                }
                 .btn__git {
-                    background-color: $color-background;
-                    color: $color-main;
-                    border: 1px solid $color-main;
-                    transition: all 1s;
-                  }
-                  .btn__git:hover {
-                    background-color: $color-main;
-                    color: $color-background;
-                    border: 1px solid $color-main;
-                    transform: scale(1.01) rotate(1deg);
-                  }
+                  background-color: $color-background;
+                  color: $color-main;
+                  border: 1px solid $color-main;
+                  transition: all 1s;
+                }
+                .btn__git:hover {
+                  background-color: $color-main;
+                  color: $color-background;
+                  border: 1px solid $color-main;
+                  transform: scale(1.01) rotate(1deg);
+                }
               }
-            
             }
-            &--project:hover{
-              border: 1px solid #fff;   
+            &--project:hover {
+              border: 1px solid #fff;
             }
           }
         }
         .contact {
-
           &__title {
-
             color: $color-main;
           }
           &__title::after {
-
             color: $color-blue;
           }
           &__container {
-
             .contact__form {
-              box-shadow: 1px 1px 15px #f8bb;   
+              box-shadow: 1px 1px 15px #f8bb;
               .input-container {
                 color: #fff;
                 .input {
@@ -136,33 +126,28 @@ body {
                   border-bottom: 1px solid #f8b8;
                 }
               }
-              
             }
           }
         }
-        .footer__container{
+        .footer__container {
           background-color: $color-main;
           color: $color-background;
           border-top: 2px solid $color-main;
         }
-        
       }
-
-      .lowerThan, .greaterThan{
-        .project__svg{
-          border: .5rem solid rgb(255 136 187 / 73%);
-          border-radius: 50%;
-        }
+      .button__container{
+        border: 0.5rem solid rgb(255 136 187 / 73%);
       }
-    }
       
+    }
+
     .title {
       color: $color-main;
     }
     .title::after {
       color: $color-blue;
     }
-  
+
     .button {
       background-color: $color-background;
       color: $color-main;

@@ -3,9 +3,7 @@ $color-main: #2f3336;
 $color-background: #f8fbfb;
 $font-color: rgb(213, 215, 219, 1);
 
-
 body {
-
   .container {
     .aside__perfil {
       background-color: $color-main;
@@ -24,7 +22,7 @@ body {
           }
         }
       }
-      &--menu {       
+      &--menu {
         .nav-link {
           color: $font-color;
           .anchor {
@@ -33,15 +31,11 @@ body {
         }
       }
 
-      .darkmode{    
-        
+      .darkmode {
         h1 {
-    
-          color:$color-background;
-          
+          color: $color-background;
         }
       }
-
     }
 
     .sections {
@@ -53,14 +47,13 @@ body {
         &__title {
           &--h1 {
             border-right: 0.15em solid $color-main;
-
           }
-          &--h2 {     
+          &--h2 {
             border-right: 0.15em solid $color-main;
-            }
           }
         }
-      
+      }
+
       .container__sections {
         .who_am_i {
           &__title::after {
@@ -73,83 +66,73 @@ body {
                 .skills__card {
                   box-shadow: 1px 1px 15px#f8bb;
                 }
-                .skills__card:hover{
-                 border:1px solid #000;   
+                .skills__card:hover {
+                  border: 1px solid #000;
                 }
               }
             }
           }
         }
         .projects {
-          &__container {          
+          &__container {
             &--project {
-              box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);              
-              .separator-line{
-                border: 1px solid rgb(0 0 0 / 0.2)
+              box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+              .separator-line {
+                border: 1px solid rgb(0 0 0 / 0.2);
               }
               .project__btns {
                 .btn__demo {
                   border: 1px solid $color-blue;
                   background-color: $color-background;
-                  color: $color-blue;                
+                  color: $color-blue;
                 }
                 .btn__demo:hover {
-                    background-color: $color-blue;
-                    color: $color-background;
-                    border: 1px solid $color-blue;
-                  }
+                  background-color: $color-blue;
+                  color: $color-background;
+                  border: 1px solid $color-blue;
+                }
                 .btn__git {
-                    background-color: $color-blue;
-                    color: $color-background;
-                    border: 1px solid $color-main;
-                  }
-                  .btn__git:hover {
-                    background-color: $color-background;
-                    color: $color-blue;
-                    border: 1px solid $color-main;
-                    transform: scale(1.01) rotate(1deg);
-                  }
+                  background-color: $color-blue;
+                  color: $color-background;
+                  border: 1px solid $color-main;
+                }
+                .btn__git:hover {
+                  background-color: $color-background;
+                  color: $color-blue;
+                  border: 1px solid $color-main;
+                  transform: scale(1.01) rotate(1deg);
+                }
               }
             }
           }
         }
         .contact {
-
           &__title {
-
             color: $color-main;
           }
           &__title::after {
-
             color: $color-blue;
           }
           &__container {
-
             .contact__form {
               box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
               .input-container {
-               
                 .input {
                   background-color: $color-background;
                   border-bottom: 1px solid #000;
                 }
               }
-              
             }
           }
         }
       }
-      .lowerThan, .greaterThan{
-        .project__svg{
-          border: .5rem solid rgb(255 136 187 / 73%);
-          border-radius: 50%;
-        }
+      .button__container{
+        border: 0.5rem solid rgb(255 136 187 / 73%);
       }
+      
     }
-    
 
     .title {
-
       color: $color-main;
     }
     .title::after {
@@ -167,5 +150,4 @@ body {
     color: $color-blue;
     border: 1px solid $color-blue;
   }
-
 }

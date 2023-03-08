@@ -1,5 +1,5 @@
 body {
-  color: #E5E5FE;
+  color: #e5e5fe;
 }
 body .container .aside__perfil {
   background-color: #f8fbfb;
@@ -105,9 +105,8 @@ body .container .sections .container__sections .footer__container {
   color: #2f3336;
   border-top: 2px solid #f8fbfb;
 }
-body .container .sections .lowerThan .project__svg, body .container .sections .greaterThan .project__svg {
+body .container .sections .button__container {
   border: 0.5rem solid rgba(255, 136, 187, 0.73);
-  border-radius: 50%;
 }
 body .container .title {
   color: #f8fbfb;
