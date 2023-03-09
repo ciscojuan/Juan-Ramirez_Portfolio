@@ -5,9 +5,6 @@ body {
 }
 body .container {
   display: flex;
-  width: 100%;
-  height: 100%;
-  transition: background-color 0.5s ease-in-out;
 }
 body .container .aside__perfil {
   width: 15%;
@@ -15,8 +12,6 @@ body .container .aside__perfil {
   height: 100vh;
   padding: 2rem 1.5rem 2rem 1.5rem;
   text-align: center;
-  transition: left 0.5s ease-in-out;
-  z-index: 9999;
 }
 body .container .aside__perfil--portrait {
   max-width: 9rem;
@@ -464,6 +459,7 @@ body .button:hover {
   body .container .aside__perfil {
     width: 30%;
     display: none;
+    z-index: 9999;
   }
   body .container .aside__perfil--portrait {
     width: 6rem;
@@ -499,8 +495,8 @@ body .button:hover {
     width: 100%;
   }
   body .container .sections .button__container {
-    z-index: 999;
     display: block;
+    z-index: 999;
   }
   body .container .sections .button__container .greaterThan {
     pointer-events: none;
@@ -511,7 +507,7 @@ body .button:hover {
     display: none;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   body .container .sections {
     width: 100%;
   }

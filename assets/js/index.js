@@ -17,7 +17,7 @@ window.addEventListener('resize', ()=>{
 buttonMenu.addEventListener("click", (e) => {
     console.log('metodo funcionando!');
   isOpeneded =!isOpeneded;
-  if(isOpeneded == true && document.documentElement.clientWidth <= 768){
+  if(isOpeneded == true){
       menu.style.display = "block";
       arrowClose.style.display = "block";
       arrowOpen.style.display = "none";
@@ -28,7 +28,6 @@ buttonMenu.addEventListener("click", (e) => {
     arrowClose.style.display = "none";
     arrowOpen.style.display = "block";
     container.style.filter = "blur(0)";
-    e.stopImmediatePropagation()
 } 
 });
 
