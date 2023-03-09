@@ -85,9 +85,6 @@ body .container .sections .container__sections .contact__container .contact__for
   background-color: #f8fbfb;
   border-bottom: 1px solid #000;
 }
-body .container .sections .button__container {
-  border: 0.5rem solid rgba(255, 136, 187, 0.73);
-}
 body .container .title {
   color: #2f3336;
 }

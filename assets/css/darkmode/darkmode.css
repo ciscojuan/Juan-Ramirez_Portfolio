@@ -105,9 +105,6 @@ body .container .sections .container__sections .footer__container {
   color: #2f3336;
   border-top: 2px solid #f8fbfb;
 }
-body .container .sections .button__container {
-  border: 0.5rem solid rgba(255, 136, 187, 0.73);
-}
 body .container .title {
   color: #f8fbfb;
 }
