@@ -353,17 +353,15 @@ body .container .sections .container__sections .contact__container .contact__for
   margin: 10px 0;
 }
 body .container .sections .container__sections .contact__container .contact__form .input-container .input {
-  height: 1.5rem;
+  height: 20px;
   width: 95%;
   font-size: 20px;
   padding: 10px;
-  padding-left: 0rem;
   border: none;
   outline: none;
-  margin: 10px;
 }
-body .container .sections .container__sections .contact__container .contact__form .input-message-error {
-  display: none;
+body .container .sections .container__sections .contact__container .contact__form .form-error {
+  color: red;
 }
 body .container .sections .container__sections .footer__container {
   font-family: Pacifico, cursive;

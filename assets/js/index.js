@@ -7,6 +7,12 @@ const buttonMenu = document.querySelector(".button__container");
 const menu = document.querySelector(".aside__perfil");
 const arrowOpen = document.querySelector("[data-greather]");
 const arrowClose = document.querySelector("[data-lower]");
+/* ################################## email ############################ */
+const user = document.querySelector('#name');
+const email = document.querySelector('#email');
+const message = document.querySelector('#message');
+const btnEmail = document.querySelector('#send')
+
 let isOpeneded = false;
 
 window.addEventListener('resize', ()=>{
@@ -34,7 +40,6 @@ buttonMenu.addEventListener("click", (e) => {
 // Load theme on page load
 window.addEventListener("load", () => {
   var themeMode = localStorage.getItem("theme");
-
   console.log(themeMode);
   if (themeMode === "dark") {
     theme.href = "assets/css/darkmode/darkmode.css";
@@ -44,9 +49,17 @@ window.addEventListener("load", () => {
   }
 });
 
+
 // Toggle theme on darkSwitch change
 darkSwitch.addEventListener("change", () => {
   const themeMode = darkSwitch.checked ? "dark" : "light";
   theme.href = `assets/css/${themeMode}mode/${themeMode}mode.css`;
   localStorage.setItem("theme", themeMode);
 });
+
+btnEmail.addEventListener('click', (e) =>{
+
+  e.preventDefault()
+  console.log(user.value, email.value, message.value)
+   window.open(`mailto:${email.value}?subject=You've got a message from ${user.name}&body=${message.value}`);
+})

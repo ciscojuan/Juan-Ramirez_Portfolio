@@ -258,28 +258,29 @@
           <section id="contact" class="contact">
             <h2 class="title">Contact</h2>
             <div class="contact__container">
-              <div class="contact__email">
-                <div class="email--image"><object data="assets/images/skills/gmail.svg" type="image/svg+xml" class="email__svg"></object></div>
-                <p class="email--title">Juan.ramirez.1519@gmail.com</p>
-              </div>
+            
               <div class="contact__form">
-                <form action="post">
-                  <legend class="contact__form--title">Get in touch ...</legend>
+                
+                <form action="" id="form">
+                  <legend class="contact__form--title">Get in touch </legend>
                   <div class="input-container">
-                    <input name="name" id="name" class="input input-name" type="text" placeholder=" Write your name" required data-tipo="nombre">
-                    <span class="input-message-error">Este campo no es valido</span>
+                    <label for="name">Name: </label>
+                    <input name="name" id="name" class="input input-name" type="text" data-validation-help="Please give us your name"  data-validation="required">
                   </div>
                   <div class="input-container">
-                    <input name="email" id="email" class="input input-email" type="email" placeholder=" Write your email" required data-tipo="email">
-                    <span class="input-message-error">Este campo no es valido</span>
+                    <label for="name">Email: </label>
+                    <input name="email" id="email" class="input input-email" type="email" data-validation="email" data-validation-help="write you email" data-validation="required">
+                    
                   </div>
                   
                   <div class="input-container">
-                    <input name="message" id="message" class="input input-message" type="message" placeholder=" Write your message" required data-tipo="message">
-                    <span class="input-message-error">Este campo no es valido</span>
+                    
+                    <label for="name">Message:  <span id="max-length-element">100</span> chars left
+                    <textarea name="text" id="message" class="input input-message" type="message"  data-validation="length" data-validation-length="max100" data-validation-help="write a message if you are insterested working on." data-validation="required"></textarea>
+
                   </div>
   
-                  <button class="button">Enviar</a>
+                  <button id="send" class="button">Enviar</a>
   
                 </form>
   
@@ -303,5 +304,13 @@
 
     </div>    
     <script src="assets/js/index.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script>
+      $.validate({
+        lang: 'es'
+      });
+      $('#my-textarea').restrictLength( $('#max-length-element') );
+    </script>
   </body>
 </html>
